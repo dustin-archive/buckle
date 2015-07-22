@@ -3,8 +3,6 @@
 // =============================================
 
 
-// ::selection {}
-
 body {
   font-family: $font-family;
   line-height: un($line-height);
@@ -17,7 +15,7 @@ address {
 }
 
 hr {
-  @include margin(($margin-top - 1) x -1 x, em); // Centers
+  @include margin(($margin-top - 1) x -1 x, em); // Vertically centers
   height: em($border-thickness);
   background-color: $color-first-2;
 

@@ -4,7 +4,7 @@
 
 
 @mixin generate-grids(
-  $column-gutter-width : $gutter-width,
+  $column-gutter-width  : $gutter-width,
   $column-gutter-height : $gutter-height,
   $column-amount        : $column-amount,
   $column-media         : null

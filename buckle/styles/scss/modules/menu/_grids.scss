@@ -13,7 +13,7 @@
 .column-menu-right ul {
   @at-root .menu-dropdown & {
     @include breakpoint(6) {
-      right: 0; // Right align the menus.
+      right: 0; // Right align the menus
     }
   }
 }
@@ -21,7 +21,7 @@
 .column-menu-left ul {
   @at-root .menu-dropdown & {
     @include breakpoint(6) {
-      left: 0; // Left align the menus.
+      left: 0; // Left align the menus
     }
   }
 }
