@@ -7,5 +7,5 @@
 
 .test-column-gutters {
   @extend %column-gutters-1;
-  max-width: calc((100% - 44em) / 12);
+  flex: 1 1 calc((100% - 44em) / 12);
 }

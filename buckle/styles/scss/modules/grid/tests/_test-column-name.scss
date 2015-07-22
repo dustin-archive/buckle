@@ -7,5 +7,5 @@
 
 .test-column-name {
   @extend %column-name-1;
-  max-width: calc((100% - 33em) / 12);
+  flex: 1 1 calc((100% - 22em) / 12);
 }
