@@ -18,9 +18,15 @@ ol {
   }
 }
 
-li {
-  &::before {
-    padding-left: em($line-height/4); // Distance between the text and the bullet
-    content: '';
-  }
+// Right align items 1-9 with 10-99
+// From item 99 onwards the list will be offset
+// May be inaccurate with other fonts or systems
+ol li:nth-child(-n+9) {
+  margin-left: em(9);
+}
+
+// Distance between the text and the bullet
+li::before {
+  padding-left: em($line-height/4);
+  content: '';
 }
