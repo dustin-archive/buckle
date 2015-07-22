@@ -16,6 +16,8 @@
   margin: 0;
   padding: 0;
   border: 0;
+  -moz-osx-font-smoothing: grayscale; // Better font rendering
+  -webkit-font-smoothing: antialiased; // Better font rendering
   word-wrap: break-word;
   box-sizing: border-box;
 }
