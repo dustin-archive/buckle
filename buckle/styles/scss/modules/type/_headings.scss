@@ -4,15 +4,11 @@
 
 
 %heading {
+  @extend %block-margin-top;
   margin-bottom: unset; // Normalize override
   font-family: 'HelveticaNeue-CondensedBold';
   font-weight: normal;
   line-height: 1;
-
-  @extend %block-margin-top;
-  // &:first-child {
-  //   margin-top: 0;
-  // }
 
   + p {
     margin-top: 0;

@@ -4,9 +4,7 @@
 
 // These are probably not limited to just the type module.
 
-%block-margin-top, // Especially this one.
-%first-child-margin-top-0, // Deprecate these names.
-%first-child { // Deprecate these names.
+%block-margin-top { // Especially this one.
   &:first-child {
     margin-top: 0;
   }

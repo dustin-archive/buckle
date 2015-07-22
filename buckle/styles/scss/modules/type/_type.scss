@@ -19,7 +19,7 @@ body {
 
 p,
 address {
-  @extend %first-child;
+  @extend %block-margin-top;
   margin-top: em($line-height/4);
 }
 
