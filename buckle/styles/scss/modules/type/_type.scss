@@ -19,7 +19,7 @@ address {
 hr {
   @include margin(($margin-top - 1) x -1 x, em); // Centers
   height: em($border-thickness);
-  background-color: $color-2;
+  background-color: $color-first-2;
 
   &.bold {
     height: em($border-thickness-bold);

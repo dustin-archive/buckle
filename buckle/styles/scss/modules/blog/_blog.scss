@@ -16,8 +16,8 @@
     @extend %block-margin-top;
     margin-top: em($line-height); // Add this to %block-margin-top?
 
-    .title {
-      text-transform: uppercase;
+    .title a {
+      @extend %anchor-second;
     }
 
     // .date {}

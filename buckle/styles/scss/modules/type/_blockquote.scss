@@ -8,8 +8,8 @@ blockquote {
   @include padding($line-height/2 $line-height, em);
   margin-top: em($line-height/2);
   border-radius: 0 em($border-radius) em($border-radius) 0;
-  background-color: $color-1;
-  color: $color-8;
+  background-color: $color-first-1;
+  color: $color-first-8;
   box-shadow: $border-left-bold;
 
   &.reverse {

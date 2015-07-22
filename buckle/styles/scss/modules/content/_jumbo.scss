@@ -7,16 +7,22 @@
   @include padding(64 32, em);
   min-height: em(128);
   background: center center;
-  background-color: $color-1;
+  background-color: $color-first-1;
   background-size: cover;
-  color: $color-4;
+  color: $color-first-4;
   text-align: center;
-
-  h6 {
-    font-family: 'HelveticaNeue-Light';
-  }
 
   @include breakpoint(6) {
     @include padding(96 64, em);
+  }
+
+  .title {
+    color: $color-first-8;
+    font-family: 'Museo Slab';
+  }
+
+  .subtitle {
+    color: $color-first-6;
+    font-family: 'HelveticaNeue-Light';
   }
 }

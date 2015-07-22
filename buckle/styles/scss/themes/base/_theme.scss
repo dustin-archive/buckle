@@ -3,10 +3,10 @@
 // =============================================
 
 
-// * { background-color: $color-1; } // Dev background-color
+// * { background-color: $color-first-1; } // Dev background-color
 
 .wrapper:nth-child(odd) {
-  background-color: $color-1;
+  background-color: $color-first-1;
 }
 
 // Headings

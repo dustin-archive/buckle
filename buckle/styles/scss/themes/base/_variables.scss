@@ -8,44 +8,66 @@ $white: #fff;
 $black: #000;
 
 // Theme colors
-$primary-color: rgb(0, 127, 191);
-$secondary-color: rgb(255, 127, 63);
+$color-first: rgb(0, 127, 191);
+$color-second: rgb(255, 127, 63);
 $background-color: $white;
 
-// Interface colors
-$color: mix($black, $primary-color);
-$color-1:  rgba($color, .0625 * 1);
-$color-2:  rgba($color, .0625 * 2);
-$color-3:  rgba($color, .0625 * 3);
-$color-4:  rgba($color, .0625 * 4);
-$color-5:  rgba($color, .0625 * 5);
-$color-6:  rgba($color, .0625 * 6);
-$color-7:  rgba($color, .0625 * 7);
-$color-8:  rgba($color, .0625 * 8);
-$color-9:  rgba($color, .0625 * 9);
-$color-10: rgba($color, .0625 * 10);
-$color-11: rgba($color, .0625 * 11);
-$color-12: rgba($color, .0625 * 12);
-$color-13: rgba($color, .0625 * 13);
-$color-14: rgba($color, .0625 * 14);
-$color-15: rgba($color, .0625 * 15);
-$color-16: rgba($color, .0625 * 16);
+// First interface colors
+$first: mix($black, $color-first);
+$color-first-1:  rgba($first, .0625 * 1);
+$color-first-2:  rgba($first, .0625 * 2);
+$color-first-3:  rgba($first, .0625 * 3);
+$color-first-4:  rgba($first, .0625 * 4);
+$color-first-5:  rgba($first, .0625 * 5);
+$color-first-6:  rgba($first, .0625 * 6);
+$color-first-7:  rgba($first, .0625 * 7);
+$color-first-8:  rgba($first, .0625 * 8);
+$color-first-9:  rgba($first, .0625 * 9);
+$color-first-10: rgba($first, .0625 * 10);
+$color-first-11: rgba($first, .0625 * 11);
+$color-first-12: rgba($first, .0625 * 12);
+$color-first-13: rgba($first, .0625 * 13);
+$color-first-14: rgba($first, .0625 * 14);
+$color-first-15: rgba($first, .0625 * 15);
+$color-first-16: rgba($first, .0625 * 16);
+
+// Second interface colors
+$second: mix($black, $color-second, .75);
+$color-second-1:  rgba($second, .0625 * 1);
+$color-second-2:  rgba($second, .0625 * 2);
+$color-second-3:  rgba($second, .0625 * 3);
+$color-second-4:  rgba($second, .0625 * 4);
+$color-second-5:  rgba($second, .0625 * 5);
+$color-second-6:  rgba($second, .0625 * 6);
+$color-second-7:  rgba($second, .0625 * 7);
+$color-second-8:  rgba($second, .0625 * 8);
+$color-second-9:  rgba($second, .0625 * 9);
+$color-second-10: rgba($second, .0625 * 10);
+$color-second-11: rgba($second, .0625 * 11);
+$color-second-12: rgba($second, .0625 * 12);
+$color-second-13: rgba($second, .0625 * 13);
+$color-second-14: rgba($second, .0625 * 14);
+$color-second-15: rgba($second, .0625 * 15);
+$color-second-16: rgba($second, .0625 * 16);
+
+//
+$border-radius: 4;
 
 // Border settings
-$border-radius: 4;
+$border-color: $color-first-2;
 $border-thickness: 2;
 $border-thickness-bold: $border-thickness*2;
 
 // Border variables
-$border: inset 0 0 0 em($border-thickness) $color-2;
-$border-top: inset 0 em($border-thickness) 0 0 $color-2;
-$border-bottom: inset 0 em(-$border-thickness) 0 0 $color-2;
-$border-left: inset em($border-thickness) 0 0 0 $color-2;
-$border-right: inset em(-$border-thickness) 0 0 0 $color-2;
+$border: inset 0 0 0 em($border-thickness) $border-color;
+$border-top: inset 0 em($border-thickness) 0 0 $border-color;
+$border-bottom: inset 0 em(-$border-thickness) 0 0 $border-color;
+$border-left: inset em($border-thickness) 0 0 0 $border-color;
+$border-right: inset em(-$border-thickness) 0 0 0 $border-color;
 
 // Bold border variables
-$border-bold: inset 0 0 0 em($border-thickness-bold) $color-2;
-$border-top-bold: inset 0 em($border-thickness-bold) 0 0 $color-2;
-$border-bottom-bold: inset 0 em(-$border-thickness-bold) 0 0 $color-2;
-$border-left-bold: inset em($border-thickness-bold) 0 0 0 $color-2;
-$border-right-bold: inset em(-$border-thickness-bold) 0 0 0 $color-2;
+$border-bold: inset 0 0 0 em($border-thickness-bold) $border-color;
+$border-top-bold: inset 0 em($border-thickness-bold) 0 0 $border-color;
+$border-bottom-bold: inset 0 em(-$border-thickness-bold) 0 0 $border-color;
+$border-left-bold: inset em($border-thickness-bold) 0 0 0 $border-color;
+$border-right-bold: inset em(-$border-thickness-bold) 0 0 0 $border-color;

@@ -25,12 +25,22 @@
   }
 }
 
-a {
+%anchor-first {
   @include anchor(
-    $color-8 unset,
-    $color-12 unset
+    $color-first-8 unset,
+    $color-first-12 unset
   );
+}
 
+%anchor-second {
+  @include anchor(
+    $color-second-12 unset,
+    $color-second-16 unset
+  );
+}
+
+a {
+  @extend %anchor-first;
   text-decoration: none;
   cursor: pointer;
 }

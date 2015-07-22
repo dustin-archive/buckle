@@ -15,7 +15,7 @@
   }
 
   ul ul {
-    background-color: $color-1;
+    background-color: $color-first-1;
 
     @at-root .menu-dropdown & { // SCSS Lint: I know what I'm doing here.
       @include breakpoint(6) {
@@ -26,7 +26,7 @@
     }
 
     ul { // SCSS Lint: I know what I'm doing here.
-      background-color: $color-1 !important; // SCSS Lint: I know what I'm doing here.
+      background-color: $color-first-1 !important; // SCSS Lint: I know what I'm doing here.
       box-shadow: none !important; // SCSS Lint: I know what I'm doing here.
 
       @at-root .menu-dropdown & { // SCSS Lint: I know what I'm doing here.
