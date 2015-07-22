@@ -27,8 +27,8 @@
 
 a {
   @include anchor(
-    $color-8 transparent,
-    $color-12 transparent
+    $color-8 unset,
+    $color-12 unset
   );
 
   text-decoration: none;

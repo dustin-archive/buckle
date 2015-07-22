@@ -15,7 +15,7 @@
 
   a {
     @include anchor(
-      $color-8 transparent,
+      $color-8 unset,
       $white $color-8
     );
   }

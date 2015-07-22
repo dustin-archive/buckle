@@ -35,8 +35,8 @@
     list-style: none;
 
     &::before { // Overrides type.scss
-      padding: 0;
-      content: initial;
+      padding: unset;
+      content: unset;
     }
   }
 

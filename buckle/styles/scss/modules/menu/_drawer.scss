@@ -20,9 +20,9 @@
 
   @at-root .menu-dropdown & {
     @include breakpoint(6) {
-      position: static;
-      width: auto;
-      height: auto;
+      position: unset;
+      width: unset;
+      height: unset;
     }
   }
 
@@ -31,7 +31,7 @@
 
     @at-root .menu-dropdown & {
       @include breakpoint(6) {
-        flex-direction: row;
+        flex-direction: unset;
       }
     }
 
@@ -52,8 +52,8 @@
       ul { // SCSS Lint: I know what I'm doing here.
         @at-root .menu-dropdown & {
           @include breakpoint(6) {
-            @include padding(0 x, em); // Remove drawer padding for nested drawers on desktop
-            @include relative(0 x x x);
+            @include padding(unset x, em); // Remove drawer padding for nested drawers on desktop
+            @include position-unset(unset x x x);
           }
         }
       }
