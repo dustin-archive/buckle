@@ -30,14 +30,8 @@
 @import 'mixins/transition';                    // Requires: lifesaver (is-null)
 
 //
-// + Middlewares
-// =============================================
-
-// @import 'middlewares/bootstrap/main';
-
-//
 // + Theme
 // =============================================
 
 @import 'themes/base/main';
-//@import 'themes/soda/_main';
+// @import 'themes/soda/_main';
