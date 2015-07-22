@@ -26,16 +26,3 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
-//
-// + Generate default media grids and columns
-// =============================================
-
-@for $i from 1 through $column-amount {
-  @include breakpoint($i) {
-    $column-media: '-media-' + $i;
-
-    @include generate-grids($column-media: $column-media);
-    @include generate-columns($column-media: $column-media);
-  }
-}
