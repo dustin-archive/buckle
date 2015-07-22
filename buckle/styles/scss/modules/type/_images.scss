@@ -8,7 +8,7 @@ p {
   svg {
     max-width: 100%;
     float: left;
-    border-radius: em(4); // Store in a var $border-radius??
+    border-radius: $border-radius; // Store in a var $border-radius??
     vertical-align: middle;
   }
 }
