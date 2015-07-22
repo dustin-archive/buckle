@@ -6,7 +6,7 @@
 @mixin fa($width, $height, $padding: 0) {
   &[class^='fa-'] {
     @include padding(x ($width / 2) x $width, em);
-    position: relative; // Keeps icons relative to the button{
+    position: relative; // Keeps icons relative to the button
 
     &::before {
       @include absolute(0 x x $padding, em);
