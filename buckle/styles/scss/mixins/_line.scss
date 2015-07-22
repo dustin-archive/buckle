@@ -1,0 +1,34 @@
+//
+// + Line
+// =============================================
+
+
+@mixin line($side, $color: $black, $style: solid, $padding: 4) {
+  display: inline-block;
+  border-style: $style;
+  border-color: $color;
+
+  $padding-vertical: $padding;
+  $padding-horizontal: $padding * 2;
+
+  $t: null;
+  $r: null;
+  $b: null;
+  $l: null;
+
+  @if index($side, box) {
+    $t: $padding-vertical;
+    $r: $padding-horizontal;
+    $b: $padding-vertical;
+    $l: $padding-horizontal;
+  }
+  @else {
+    $t: if(index($side, top), $padding-vertical, null);
+    $r: if(index($side, right), $padding-horizontal, null);
+    $b: if(index($side, bottom), $padding-vertical, null);
+    $l: if(index($side, left), $padding-horizontal, null);
+  }
+
+  @include padding($t $r $b $l, px);
+  @include border-width($t $r $b $l, px);
+}

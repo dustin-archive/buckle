@@ -1,0 +1,80 @@
+//
+// + Menu Drawer
+// =============================================
+
+
+.menu-drawer {
+  @include absolute($link-height 0 x x, em);
+  width: 75vw;
+  height: calc(100vh - #{em($gutter-height * 2)});
+
+  @at-root .menu-inline & {
+    @include absolute($link-height 0 x x, em);
+  }
+
+  @at-root .menu-dropdown & {
+    @include breakpoint(4) {
+      width: 50vw;
+    }
+  }
+
+  @at-root .menu-dropdown & {
+    @include breakpoint(6) {
+      position: static;
+      width: auto;
+      height: auto;
+    }
+  }
+
+  ul {
+    flex-direction: column;
+
+    @at-root .menu-dropdown & {
+      @include breakpoint(6) {
+        flex-direction: row;
+      }
+    }
+
+    ul {
+      display: block; // Prevents Chrome from squishing flex-items when animating height
+      min-width: calc(100% + #{em($gutter-width)});
+      height: 0;
+      overflow: hidden;
+      flex-direction: column;
+
+      @at-root .menu-dropdown & {
+        @include breakpoint(6) {
+          @include padding(6 x, em); // Drawer padding on desktop
+          @include absolute($link-height x x x, em); // Prevents the bar from stretching when the menu expands
+        }
+      }
+
+      ul { // SCSS Lint: I know what I'm doing here.
+        @at-root .menu-dropdown & {
+          @include breakpoint(6) {
+            @include padding(0 x, em); // Remove drawer padding for nested drawers on desktop
+            @include relative(0 x x x);
+          }
+        }
+      }
+    }
+  }
+
+  li {
+    @at-root .menu-dropdown & {
+      @include breakpoint(6) {
+        position: relative; // Keeps the menus relative to the buttons
+      }
+    }
+
+    > ul {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  a {
+    @include padding(x 16 x 16, em);
+    @include fa($link-height, $link-height);
+  }
+}

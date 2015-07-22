@@ -1,0 +1,21 @@
+//
+// + Lists
+// =============================================
+
+
+ul,
+ol {
+  @include margin($line-height/4 x x $line-height/2, em);
+  list-style-position: inside;
+
+  &.unstyled {
+    list-style: none;
+  }
+}
+
+li {
+  &::before {
+    padding-left: em($line-height/4); // Distance between the text and the bullet
+    content: '';
+  }
+}

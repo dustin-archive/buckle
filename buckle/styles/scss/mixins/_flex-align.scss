@@ -1,0 +1,30 @@
+//
+// + Flex Align
+// =============================================
+
+
+@mixin flex-align($horizontal, $vertical: null) {
+  @if not is-null($horizontal) {
+    @if $horizontal == start or $horizontal == left {
+      justify-content: flex-start;
+    }
+    @else if $horizontal == center {
+      justify-content: center;
+    }
+    @else if $horizontal == end or $horizontal == right {
+      justify-content: flex-end;
+    }
+  }
+
+  @if not is-null($vertical) {
+    @if $horizontal == start or $vertical == top {
+      align-items: flex-start;
+    }
+    @else if $vertical == center {
+      align-items: center;
+    }
+    @else if $horizontal == end or $vertical == bottom {
+      align-items: flex-end;
+    }
+  }
+}

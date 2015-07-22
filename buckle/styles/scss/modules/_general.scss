@@ -1,0 +1,21 @@
+//
+// + General
+// =============================================
+
+
+@charset 'UTF-8';
+
+@viewport {
+  width: device-width;
+  zoom: 1;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  word-wrap: break-word;
+  box-sizing: border-box;
+}

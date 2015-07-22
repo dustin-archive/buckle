@@ -1,0 +1,9 @@
+//
+// + Test border radius
+// =============================================
+
+
+.test-border-radius {
+  @include ls(border-radius, 1 2 3 4, em);
+  border-radius: .0625em .125em .1875em .25em;
+}

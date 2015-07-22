@@ -1,0 +1,36 @@
+//
+// + Anchors
+// =============================================
+
+
+@mixin anchor($normal, $active) {
+  $color: nth($normal, 1);
+  $background: nth($normal, 2);
+
+  $active-color: nth($active, 1);
+  $active-background: nth($active, 2);
+
+  &,
+  &:link,
+  &:visited,
+  &:active {
+    background: $background;
+    color: $color;
+  }
+
+  &:hover,
+  &:focus {
+    background: $active-background;
+    color: $active-color;
+  }
+}
+
+a {
+  @include anchor(
+    $color-8 transparent,
+    $color-12 transparent
+  );
+
+  text-decoration: none;
+  cursor: pointer;
+}

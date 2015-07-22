@@ -1,0 +1,28 @@
+//
+// + Test grid media
+// =============================================
+
+
+@include breakpoint(1) {
+  @include generate-grids($column-media: '-media');
+}
+
+.test-grid-media {
+  @extend %grid-1-media;
+}
+
+@media (min-width: 10em) {
+  .test-grid-media {
+    > [class^='column-']:nth-child(n) {
+      margin-top: 3em;
+    }
+
+    > [class^='column-']:nth-child(-n + 1) {
+      margin-top: 0;
+    }
+
+    > [class^='column-']:nth-child(1n) {
+      margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+//
+// + Test column name
+// =============================================
+
+
+@include generate-columns(name);
+
+.test-column-name {
+  @extend %column-name-1;
+  max-width: calc((100% - 33em) / 12);
+}

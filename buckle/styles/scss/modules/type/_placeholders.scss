@@ -1,0 +1,24 @@
+//
+// + Placeholders
+// =============================================
+
+// These are probably not limited to just the type module.
+
+%block-margin-top, // Especially this one.
+%first-child-margin-top-0, // Deprecate these names.
+%first-child { // Deprecate these names.
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+%highlight {
+  border-radius: em($border-radius);
+  background-color: $color-1;
+  color: $color-8;
+}
+
+%block {
+  @extend %highlight;
+  box-shadow: $border;
+}

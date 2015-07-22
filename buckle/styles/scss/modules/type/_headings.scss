@@ -1,0 +1,44 @@
+//
+// + Headings
+// =============================================
+
+
+%heading {
+  margin-bottom: 0; // Normalize override
+  font-family: 'HelveticaNeue-CondensedBold';
+  font-weight: normal;
+  line-height: 1;
+
+  @extend %block-margin-top;
+  // &:first-child {
+  //   margin-top: 0;
+  // }
+
+  + p {
+    margin-top: 0;
+  }
+
+  @at-root br + & {
+    margin-top: 0;
+  }
+}
+
+@for $i from 1 through 6 {
+  $heading-i: inverse(6, $i);
+  $heading-font-size: ($font-size/4 * $i) + $font-size;
+
+  h#{$heading-i} {
+    @extend %heading;
+    margin-top: em($line-height/2, $heading-font-size);
+    font-size: em($heading-font-size);
+
+    + h1,
+    + h2,
+    + h3,
+    + h4,
+    + h5,
+    + h6 {
+      margin-top: em($line-height/4, $heading-font-size);
+    }
+  }
+}

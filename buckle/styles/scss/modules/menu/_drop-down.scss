@@ -1,0 +1,25 @@
+//
+// + jquery.drop-down.js
+// =============================================
+
+
+.menu-drawer {
+  > ul > .toggled > ul { // SCSS Lint: I know what I'm doing here.
+    @at-root .menu-dropdown & {
+      @include breakpoint(6) {
+        transform: translateY(em(8)); // Distance between buttons and menus on desktop.
+      }
+    }
+  }
+
+  .toggled {
+    > ul {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    > a::before {
+      transform: rotate(90deg);
+    }
+  }
+}

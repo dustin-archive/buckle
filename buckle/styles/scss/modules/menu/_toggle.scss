@@ -1,0 +1,41 @@
+//
+// + jquery.toggle.js
+// =============================================
+
+
+.menu-drawer {
+  @include transition(transform, $transition-speed);
+  transform: translateX(75vw); // Drawer is always off-canvas unless toggled
+
+  @at-root .menu-dropdown & {
+    @include breakpoint(4) {
+      transform: translateX(50vw); // Drawer is always off-canvas unless toggled
+    }
+  }
+
+  @at-root .menu-dropdown & {
+    @include breakpoint(6) {
+      transform: translateX(0); // Make sure the drawer is on-canvas on desktop
+    }
+  }
+ 
+  &.toggled {
+    transform: translateX(0); // Slide the drawer on-canvas when toggled
+  }
+}
+
+.page {
+  @include transition(transform, $transition-speed);
+
+  &.toggled {
+    transform: translateX(-75vw); // Slide the page off-canvas when toggled
+
+    @include breakpoint(4) {
+      transform: translateX(-50vw); // Slide the page off-canvas when toggled
+    }
+
+    @include breakpoint(6) {
+      transform: translateX(0); // Make sure the page is on-canvas on the desktop
+    }
+  }
+}

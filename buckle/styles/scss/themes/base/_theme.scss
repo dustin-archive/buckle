@@ -1,0 +1,55 @@
+//
+// + Theme
+// =============================================
+
+
+// * { background-color: $color-1; } // Dev background-color
+
+.wrapper:nth-child(odd) {
+  background-color: $color-1;
+}
+
+// Headings
+.grid-heading {
+  @extend %grid-3;
+}
+
+.column-heading {
+  @extend %column-4;
+}
+
+// Code
+.grid-code {
+  @extend %grid-2;
+}
+
+.column-code {
+  @extend %column-6;
+}
+
+// Blockquote
+.grid-blockquote {
+  @extend %grid-2;
+}
+
+.column-blockquote {
+  @extend %column-6;
+}
+
+// Horizontal-rule
+.grid-horizontal-rule {
+  @extend %grid-2;
+}
+
+.column-horizontal-rule {
+  @extend %column-6;
+}
+
+// List
+.grid-list {
+  @extend %grid-3;
+}
+
+.column-list {
+  @extend %column-4;
+}

@@ -1,0 +1,27 @@
+//
+// + Blog
+// =============================================
+
+
+.blog {
+  .meta {
+    @include breakpoint(8) {
+      padding-right: em($gutter-width);
+      text-align: right;
+      box-shadow: $border-right;
+    }
+  }
+
+  .post {
+    @extend %first-child-margin-top-0;
+    margin-top: em($line-height);
+
+    .title {
+      text-transform: uppercase;
+    }
+
+    // .date {}
+
+    // .author {}
+  }
+}

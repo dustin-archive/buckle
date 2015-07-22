@@ -1,0 +1,27 @@
+//
+// + Grid
+// =============================================
+
+
+// .grid-menu {}
+
+.column-menu-left,
+.column-menu-right {
+  display: flex;
+}
+
+.column-menu-right ul {
+  @at-root .menu-dropdown & {
+    @include breakpoint(6) {
+      right: 0; // Right align the menus.
+    }
+  }
+}
+
+.column-menu-left ul {
+  @at-root .menu-dropdown & {
+    @include breakpoint(6) {
+      left: 0; // Left align the menus.
+    }
+  }
+}

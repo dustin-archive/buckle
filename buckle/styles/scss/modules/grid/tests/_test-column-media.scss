@@ -1,0 +1,11 @@
+//
+// + Test column media
+// =============================================
+
+
+@include generate-columns(media, $column-media: '-media');
+
+.test-column-media {
+  @extend %column-media-1-media;
+  max-width: calc((100% - 33em) / 12);
+}

@@ -1,0 +1,33 @@
+//
+// + Code
+// =============================================
+
+
+samp,
+code {
+  @extend %highlight;
+  @include padding($line-height/8 $line-height/4, em);
+  box-shadow: $border-top;
+}
+
+kbd {
+  @extend %highlight;
+  @include padding($line-height/8 $line-height/4, em);
+  @include margin(x $line-height/8, em);
+  box-shadow: $border-bottom;
+}
+
+pre {
+  @extend %block;
+  @include padding($line-height/2 $line-height, em);
+  margin-top: em($line-height/2);
+  line-height: 1.25;
+  overflow: auto;
+  word-wrap: normal;
+
+  code {
+    padding: unset;
+    background-color: unset;
+    box-shadow: unset;
+  }
+}

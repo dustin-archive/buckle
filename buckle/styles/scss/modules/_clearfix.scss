@@ -1,0 +1,37 @@
+//
+// + Clearfix
+// =============================================
+
+
+@mixin clearfix {
+  &,
+  &::after {
+    clear: both;
+  }
+
+  &::after {
+    display: table;
+    content: '';
+  }
+}
+
+@mixin un-clearfix {
+  &,
+  &::after {
+    clear: none;
+  }
+
+  &::after {
+    display: block;
+    clear: none;
+    content: none;
+  }
+}
+
+%clearfix {
+  @include clearfix;
+}
+
+%un-clearfix {
+  @include un-clearfix;
+}

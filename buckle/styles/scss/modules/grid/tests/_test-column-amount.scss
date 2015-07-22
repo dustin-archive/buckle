@@ -1,0 +1,11 @@
+//
+// + Test column amount
+// =============================================
+
+
+@include generate-columns(amount, $column-amount: 5);
+
+.test-column-amount {
+  @extend %column-amount-5;
+  max-width: 100%;
+}

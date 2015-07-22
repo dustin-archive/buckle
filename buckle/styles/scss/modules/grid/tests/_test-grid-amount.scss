@@ -1,0 +1,22 @@
+//
+// + Test grid amount
+// =============================================
+
+
+@include generate-grids($column-amount: 5);
+
+.test-grid-amount {
+  @extend %grid-5;
+
+  > [class^='column-']:nth-child(n) {
+    margin-top: 3em;
+  }
+
+  > [class^='column-']:nth-child(-n + 5) {
+    margin-top: 0;
+  }
+
+  > [class^='column-']:nth-child(5n) {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,22 @@
+//
+// + Menu Button
+// =============================================
+
+
+.menu-button {
+  min-width: em($gutter-height);
+
+  @at-root .menu-dropdown & {
+    @include breakpoint(6) {
+      visibility: hidden;
+    }
+  }
+
+  &::after {
+    display: block;
+    font-family: FontAwesome;
+    font-size: 1.5em;
+    text-align: center;
+    content: $fa-var-bars;
+  }
+}

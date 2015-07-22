@@ -1,0 +1,20 @@
+//
+// + Float
+// =============================================
+
+
+%float {
+  @include margin(($gutter-height / 2) x, em);
+}
+
+.float-left {
+  @extend %float;
+  margin-right: em($gutter-width / 2);
+  float: left;
+}
+
+.float-right {
+  @extend %float;
+  margin-left: em($gutter-width / 2);
+  float: right;
+}

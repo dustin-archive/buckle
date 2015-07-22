@@ -1,0 +1,22 @@
+//
+// + Test grid gutters
+// =============================================
+
+
+@include generate-grids($column-gutter-height: 64);
+
+.test-grid-gutters {
+  @extend %grid-1;
+
+  > [class^='column-']:nth-child(n) {
+    margin-top: 3em;
+  }
+
+  > [class^='column-']:nth-child(-n + 1) {
+    margin-top: 0;
+  }
+
+  > [class^='column-']:nth-child(1n) {
+    margin-right: 0;
+  }
+}

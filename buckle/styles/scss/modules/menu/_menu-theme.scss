@@ -1,0 +1,31 @@
+//
+// + Menu Theme
+// =============================================
+
+
+.menu {
+  background-color: $background-color;
+  box-shadow: $border-bottom;
+
+  &.menu-dropdown {
+    @include breakpoint(6) {
+      box-shadow: $border-top, $border-bottom;
+    }
+  }
+
+  a {
+    @include anchor(
+      $color-8 transparent,
+      $white $color-8
+    );
+  }
+
+  .toggled > a {
+    background-color: $color-6;
+    color: $background-color;
+  }
+
+  .menu-brand {
+    font-weight: bold;
+  }
+}

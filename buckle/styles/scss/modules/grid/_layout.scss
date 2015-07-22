@@ -1,0 +1,41 @@
+//
+// + Layout
+// =============================================
+
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  min-width: px($page-min);
+}
+
+.center {
+  width: 100%;
+  max-width: em($page-max);
+  margin: auto;
+}
+
+.wrapper {
+  @include padding($gutter-width, em);
+}
+
+[class^='grid-'] {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+//
+// + Generate default media grids and columns
+// =============================================
+
+@for $i from 1 through $column-amount {
+  @include breakpoint($i) {
+    $column-media: '-media-' + $i;
+
+    @include generate-grids($column-media: $column-media);
+    @include generate-columns($column-media: $column-media);
+  }
+}

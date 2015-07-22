@@ -1,0 +1,3 @@
+(($) ->
+  $.fn.reverse = [].reverse
+) jQuery

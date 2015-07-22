@@ -1,0 +1,38 @@
+//
+// + Type
+// =============================================
+
+
+*,
+*::before,
+*::after {
+  -moz-osx-font-smoothing: grayscale; // Better font rendering
+  -webkit-font-smoothing: antialiased; // Better font rendering
+}
+
+// ::selection {}
+
+body {
+  font-family: $font-family;
+  line-height: un($line-height);
+}
+
+p,
+address {
+  @extend %first-child;
+  margin-top: em($line-height/4);
+}
+
+hr {
+  @include margin(($margin-top - 1) x -1 x, em); // Centers
+  height: em($border-thickness);
+  background-color: $color-2;
+
+  &.bold {
+    height: em($border-thickness-bold);
+  }
+}
+
+small {
+  font-size: em(8);
+}

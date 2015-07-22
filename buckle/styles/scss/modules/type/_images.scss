@@ -1,0 +1,19 @@
+//
+// + Images
+// =============================================
+
+
+p {
+  img,
+  svg {
+    max-width: 100%;
+    float: left;
+    border-radius: em(4); // Store in a var $border-radius??
+    vertical-align: middle;
+  }
+}
+
+svg {
+  width: 100%;
+  transform: translateZ(0); // Fixes blurry SVGs when using filters
+}

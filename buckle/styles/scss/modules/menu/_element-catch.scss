@@ -1,0 +1,16 @@
+//
+// + jquery.element-catch.js
+// =============================================
+
+
+.menu.menu-dropdown {
+  @include breakpoint(6) {
+    position: absolute;
+    transform: translateY(#{em($link-height)});
+
+    &.scrolled {
+      position: fixed;
+      transform: translateY(0);
+    }
+  }
+}

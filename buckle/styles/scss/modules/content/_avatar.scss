@@ -1,0 +1,31 @@
+//
+// + Avatar
+// =============================================
+// 1. Chrome has a weird 1px issue with border
+
+$avatar-size: 192;
+$border-width: 12;
+
+.profile {
+  @include padding(0 x x x);
+  height: em(128);
+
+  .center {
+    @include padding(0 x);
+  }
+
+  .inner {
+    @include flex-align(center, center);
+  }
+
+  .profile-avatar {
+    @include size(($avatar-size - ($border-width * 0)), em);
+    margin-top: em(0 - ($avatar-size / 2));
+    border: solid em($border-width) $white;
+    border-radius: 50%;
+    background-color: $white;
+    background-position: 0 -1px; // 1
+    background-size: cover;
+    animation: fade-up 1s;
+  }
+}

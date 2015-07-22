@@ -1,0 +1,11 @@
+//
+// + Test column gutters
+// =============================================
+
+
+@include generate-columns(gutters, $column-gutter-width: 64, $column-gutter-height: 64);
+
+.test-column-gutters {
+  @extend %column-gutters-1;
+  max-width: calc((100% - 44em) / 12);
+}

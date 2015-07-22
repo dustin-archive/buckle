@@ -1,0 +1,29 @@
+//
+// + Transition
+// =============================================
+
+
+@mixin transition($type-list, $duration: null, $timing-function: null, $delay: null) {
+  $length: length($type-list);
+  $property: null;
+
+  @if index($type-list, all) != null {
+    $length: 1;
+    $property: all;
+  }
+  @else {
+    @each $type in $type-list {
+      $property: append($property, $type);
+    }
+  }
+
+  @if $length == 1 {
+    transition: $property set-default($duration, .25s) set-default($timing-function, null) set-default($delay, null);
+  }
+  @else {
+    transition-property: $property;
+    transition-duration: set-default($duration, .25s);
+    transition-timing-function: set-default($timing-function, null);
+    transition-delay: set-default($delay, null);
+  }
+}

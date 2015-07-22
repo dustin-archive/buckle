@@ -1,0 +1,39 @@
+//
+// + Menu Drawer Theme
+// =============================================
+
+
+.menu-drawer {
+  background-color: $background-color;
+  box-shadow: $border-left;
+
+  @at-root .menu-dropdown & {
+    @include breakpoint(6) {
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
+
+  ul ul {
+    background-color: $color-1;
+
+    @at-root .menu-dropdown & { // SCSS Lint: I know what I'm doing here.
+      @include breakpoint(6) {
+        border-radius: em($border-radius);
+        background-color: $background-color;
+        box-shadow: $border;
+      }
+    }
+
+    ul { // SCSS Lint: I know what I'm doing here.
+      background-color: $color-1 !important; // SCSS Lint: I know what I'm doing here.
+      box-shadow: none !important; // SCSS Lint: I know what I'm doing here.
+
+      @at-root .menu-dropdown & { // SCSS Lint: I know what I'm doing here.
+        @include breakpoint(6) {
+          border-radius: 0;
+        }
+      }
+    }
+  }
+}

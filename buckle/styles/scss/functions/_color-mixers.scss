@@ -1,0 +1,20 @@
+//
+// + Color Mixers
+// =============================================
+
+
+@function dry($color, $divisor) {
+  @return rgba($color, 1 / $divisor);
+}
+
+@function wet($color, $divisor) {
+  @return rgba($color, ($divisor - 1) / $divisor);
+}
+
+@function dry-mix($color, $background, $divisor) {
+  @return mix($color, $background, percentage(1 / $divisor));
+}
+
+@function wet-mix($color, $background, $divisor) {
+  @return mix($color, $background, percentage(($divisor - 1) / $divisor));
+}

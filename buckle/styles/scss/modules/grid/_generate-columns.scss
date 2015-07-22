@@ -1,0 +1,95 @@
+//
+// + Generate columns
+// =============================================
+
+
+@mixin generate-columns(
+  $column-name          : null,
+  $column-gutter-width  : $gutter-width,
+  $column-gutter-height : $gutter-height,
+  $column-amount        : $column-amount,
+  $column-media         : null
+  ) {
+
+  //
+  // + Columns
+  // =============================================
+
+  $column-name: if(is-null($column-name), $column-name, $column-name + '-');
+
+  @for $i from 1 through ($column-amount - 1) {
+
+    //
+    // + Column width
+    // =============================================
+
+    $column-divisor: $column-amount / $i;
+    $column-gutter-width-total: $column-gutter-width * ($column-divisor - 1);
+
+    $column-width: null;
+    $offset-margin: null;
+
+    @if $column-gutter-width > 0 {
+      $column-width: calc((100% - #{em($column-gutter-width-total)}) / #{$column-divisor});
+      $offset-margin: calc(((100% - #{em($column-gutter-width-total)}) / #{$column-divisor}) + #{em($column-gutter-width)});
+    }
+    @else {
+      $column-width: calc(100% / #{$column-divisor});
+      $offset-margin: calc((100% / #{$column-divisor}) + #{em($column-gutter-width)});
+    }
+
+    //
+    // + Columns and offsets
+    // =============================================
+
+    %column-#{$column-name}#{$i}#{$column-media} {
+      flex: 1 1 $column-width;
+    }
+
+    %offset-#{$column-name}left-#{$i}#{$column-media} {
+      margin-left: $offset-margin;
+    }
+
+    %offset-#{$column-name}right-#{$i}#{$column-media} {
+      margin-right: $offset-margin;
+    }
+  }
+
+  //
+  // + Largest column and offset
+  // =============================================
+
+  %column-#{$column-name}#{$column-amount}#{$column-media} {
+    flex: 1 1 100%;
+  }
+
+  %offset-#{$column-name}left-#{$column-amount}#{$column-media} {
+    margin-left: 100%;
+  }
+
+  %offset-#{$column-name}right-#{$column-amount}#{$column-media} {
+    margin-right: 100%;
+  }
+
+  //
+  // + Zero column and offset
+  // =============================================
+
+  %column-#{$column-name}0#{$column-media} {
+    flex: 1 1 0;
+  }
+
+  %offset-#{$column-name}left-0#{$column-media} {
+    margin-left: unset;
+  }
+
+  %offset-#{$column-name}right-0#{$column-media} {
+    margin-right: unset;
+  }
+}
+
+//
+// + Generate default columns
+// =============================================
+
+@include generate-columns();

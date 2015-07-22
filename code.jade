@@ -1,0 +1,61 @@
+.wrapper
+  .center
+    h6 Code
+    br
+    
+    .grid-code
+      .column-code
+        p: code pre
+        pre.
+          pre.
+            foo {
+              bar: baz;
+            }
+        pre.
+          foo {
+            bar: baz;
+          }
+          
+      .column-code
+        p: code pre: code
+        pre.
+          pre: code.
+            foo {
+              bar: baz;
+            }
+        pre: code.
+          foo {
+            bar: baz;
+          }
+          
+      .column-code
+        p: code code
+        pre.
+          p: code
+            include lorem.md
+        p: code
+          include lorem.md
+          
+      .column-code
+        p: code samp
+        pre.
+          p: samp
+            include lorem.md
+        p: samp
+          include lorem.md
+          
+      .column-code
+        p: code kbd
+        pre.
+          p
+            kbd cmd
+            | +
+            kbd shift
+            | +
+            kbd space
+        p
+          kbd cmd
+          | +
+          kbd shift
+          | +
+          kbd space

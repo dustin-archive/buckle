@@ -1,0 +1,100 @@
+//
+// + Generate grids
+// =============================================
+
+
+@mixin generate-grids(
+  $column-gutter-width : $gutter-width,
+  $column-gutter-height : $gutter-height,
+  $column-amount        : $column-amount,
+  $column-media         : null
+  ) {
+
+  //
+  // + Grid placeholders
+  // =============================================
+
+  @if is-null($column-media) {
+    %grid-all-children {
+      @include margin($column-gutter-height $column-gutter-width x x, em);
+    }
+
+    %grid-first-row {
+      margin-top: unset;
+    }
+
+    %grid-margin-right-unset {
+      margin-right: unset;
+    }
+  }
+  @else {
+    %grid-all-children#{$column-media} {
+      @include margin($column-gutter-height $column-gutter-width x x, em);
+    }
+
+    %grid-first-row#{$column-media} {
+      margin-top: unset;
+    }
+
+    %grid-margin-right-unset#{$column-media} {
+      margin-right: unset;
+    }
+  }
+
+  //
+  // + Grids
+  // =============================================
+
+  @for $i from 1 through $column-amount {
+    %grid-#{$i}#{$column-media} {
+      > [class^='column-'] {
+
+        //
+        // + Nth-child
+        // =============================================
+
+        &:nth-child(n) {
+          @if is-null($column-media) {
+            @extend %grid-all-children;
+          }
+          @else {
+            @extend %grid-all-children#{$column-media};
+          }
+        }
+
+        //
+        // + First row
+        // =============================================
+
+        &:nth-child(-n + #{$i}) {
+          @if is-null($column-media) {
+            @extend %grid-first-row;
+          }
+          @else {
+            @extend %grid-first-row#{$column-media};
+          }
+        }
+
+        //
+        // + Last column and last child
+        // =============================================
+
+        &:nth-child(#{$i}n),
+        &:last-child {
+          @if is-null($column-media) {
+            @extend %grid-margin-right-unset;
+          }
+          @else {
+            @extend %grid-margin-right-unset#{$column-media};
+          }
+        }
+      }
+    }
+  }
+}
+
+//
+// + Generate default grids
+// =============================================
+
+@include generate-grids;

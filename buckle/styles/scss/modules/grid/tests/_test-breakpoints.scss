@@ -1,0 +1,16 @@
+//
+// + Test breakpoints
+// =============================================
+
+
+.test-breakpoints {
+  @include breakpoint(12) {
+    content: 'breakpoints';
+  }
+}
+
+@media (min-width: 120em) {
+  .test-breakpoints {
+    content: 'breakpoints';
+  }
+}
