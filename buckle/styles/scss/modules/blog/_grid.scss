@@ -2,43 +2,42 @@
 // + Grid
 // =============================================
 
+//
+// + Blog
+// =============================================
 
 .grid-blog {
-  @extend %grid-1;
-  @extend %grid-2-media-8;
-}
-
-.grid-blog-post {
-  @extend %grid-1;
-  @extend %grid-2-media-6;
+  @include grid(1 '2-8');
 }
 
 .column-blog-head {
-  @extend %column-12;
-  @extend %column-9-media-8;
+  @include column(12 '9-8');
 }
 
 .column-blog-head-offset {
-  @extend %column-12;
-  @extend %column-3-media-8;
+  @include column(12 '3-8');
 }
 
 .column-blog-meta {
-  @extend %column-12;
-  @extend %column-3-media-8;
+  @include column(12 '3-8');
 }
 
 .column-blog-content {
-  @extend %column-12;
-  @extend %column-9-media-8;
+  @include column(12 '9-8');
+}
+
+//
+// + Blog post
+// =============================================
+
+.grid-blog-post {
+  @include grid(1 '2-6');
 }
 
 .column-blog-post {
-  @extend %column-12;
-  @extend %column-8-media-6;
+  @include column(12 '8-6');
 }
 
 .column-blog-post-offset {
-  @extend %column-12;
-  @extend %column-4-media-6;
+  @include column(12 '4-6');
 }
