@@ -1,0 +1,16 @@
+//
+// + Borders
+// =============================================
+
+
+$border: inset 0 0 0 em($border-thickness) $border-color;
+$border-top: inset 0 em($border-thickness) 0 0 $border-color;
+$border-bottom: inset 0 em(-$border-thickness) 0 0 $border-color;
+$border-left: inset em($border-thickness) 0 0 0 $border-color;
+$border-right: inset em(-$border-thickness) 0 0 0 $border-color;
+
+$border-bold: inset 0 0 0 em($border-thickness-bold) $border-color;
+$border-top-bold: inset 0 em($border-thickness-bold) 0 0 $border-color;
+$border-bottom-bold: inset 0 em(-$border-thickness-bold) 0 0 $border-color;
+$border-left-bold: inset em($border-thickness-bold) 0 0 0 $border-color;
+$border-right-bold: inset em(-$border-thickness-bold) 0 0 0 $border-color;
