@@ -34,11 +34,3 @@
 
 @import 'themes/base/main';
 // @import 'themes/soda/_main';
-
-
-// $margin: 4;
-$margin: null;
-
-.block {
-  margin: em($margin);
-}
