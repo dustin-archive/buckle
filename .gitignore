@@ -6,13 +6,11 @@ config.codekit
 
 bower_components
 images
-
-buckle/scripts/js
-buckle/styles/css
+dist
 index.html
 
-buckle/scripts/coffee/plugins/jquery.animate-auto.coffee
+buckle/coffee/plugins/jquery.animate-auto.coffee
 
-buckle/styles/scss/modules/_disabled
-buckle/styles/scss/middlewares
-buckle/styles/scss/themes/soda
+buckle/scss/modules/_disabled
+buckle/scss/middlewares
+buckle/scss/themes/soda
