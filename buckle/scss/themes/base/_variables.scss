@@ -16,8 +16,7 @@ $background-color: $white;
 @import 'color-second';
 
 // Borders
-// $border-radius: 4;
-$border-radius: auto;
+$border-radius: 4;
 $border-thickness: 2;
 $border-thickness-bold: $border-thickness*2;
 $border-color: $color-first-2;
