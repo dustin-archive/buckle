@@ -51,3 +51,12 @@
 .column-list {
   @include column(4);
 }
+
+// Button
+.grid-button {
+  @include grid(3);
+}
+
+.column-button {
+  @include column(4);
+}
