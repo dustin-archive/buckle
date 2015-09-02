@@ -6,7 +6,7 @@
 %heading {
   @extend %block-margin-top;
   margin-bottom: unset; // Normalize override
-  font-family: 'Museo Slab';
+  font-family: $font-family-headings;
   font-weight: normal;
   line-height: 1;
 
