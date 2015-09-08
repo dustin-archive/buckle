@@ -1,5 +1,4 @@
 // Buckle 1.0.0
-// July 22, 2015
 // The MIT License (MIT)
 // Copyright (c) 2015 Dustin Dowell
 // github.com/dustindowell22/buckle
@@ -33,4 +32,9 @@
 // =============================================
 
 @import 'themes/base/main';
-// @import 'themes/soda/_main';
+
+//
+// + Components
+// =============================================
+
+@import 'components/button/button';
