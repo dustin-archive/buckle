@@ -9,24 +9,24 @@
 // + Imports
 // =============================================
 
-@import 'imports/font-awesome';
+@import 'lib/scss/imports/font-awesome';
 
 //
 // + Functions
 // =============================================
 
-@import 'functions/inverse';
-@import 'functions/color-mixers';
-@import 'functions/value';
+@import 'lib/scss/functions/inverse';
+@import 'lib/scss/functions/color-mixers';
+@import 'lib/scss/functions/value';
 
 //
 // + Mixins
 // =============================================
 
-@import 'mixins/lifesaver/main';
-@import 'mixins/flex-align';                    // Requires: lifesaver (is-null)
-@import 'mixins/line';                          // Requires: lifesaver
-@import 'mixins/transition';                    // Requires: lifesaver (is-null)
+@import 'lib/scss/mixins/lifesaver/main';
+@import 'lib/scss/mixins/flex-align';                    // Requires: lifesaver (is-null)
+@import 'lib/scss/mixins/line';                          // Requires: lifesaver
+@import 'lib/scss/mixins/transition';                    // Requires: lifesaver (is-null)
 
 //
 // + Theme

@@ -13,23 +13,23 @@ html(lang='en-us')
     link(href='dist/css/buckle.css', rel='stylesheet', type='text/css')
 
   body
-    include components/menu.jade
+    include examples/menu.jade
 
     #page.page
-      include components/header.jade
-      //- include components/buckle.jade
+      include examples/header.jade
+      //- include examples/buckle.jade
       
       // Modules
-      include components/blog.jade
+      include examples/blog.jade
       
-      // Components
-      //- include components/menu-sidebar.jade
-      include components/heading.jade
-      include components/code.jade
-      include components/blockquote.jade
-      include components/horizontal-rule.jade
-      include components/list.jade
-      include components/button.jade
+      // examples
+      //- include examples/menu-sidebar.jade
+      include examples/heading.jade
+      include examples/code.jade
+      include examples/blockquote.jade
+      include examples/horizontal-rule.jade
+      include examples/list.jade
+      include examples/button.jade
       
     // Bower
     script(src='bower_components/jquery/dist/jquery.min.js')
