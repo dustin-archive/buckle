@@ -13,12 +13,38 @@
   flex-direction: row;
 
   button {
+    box-shadow: unset;
+    position: relative;
+
+    &:before {
+      @include absolute(0 0 0 0);
+      content: '';
+      border-style: solid;
+      border-color: $border-color;
+      border-top-width: em($border-thickness);
+      border-right-width: em($border-thickness-thin);
+      border-bottom-width: em($border-thickness);
+      border-left-width: em($border-thickness-thin);
+    }
+
     &:first-child {
       @include radius($border-radius x x $border-radius, em);
+
+      &:before {
+        @include radius($border-radius x x $border-radius, em);
+        border-left-width: em($border-thickness);
+        border-right-width: em($border-thickness-thin);
+      }
     }
 
     &:last-child {
       @include radius(x $border-radius $border-radius x, em);
+
+      &:before {
+        @include radius(x $border-radius $border-radius x, em);
+        border-left-width: em($border-thickness-thin);
+        border-right-width: em($border-thickness);
+      }
     }
   }
 }
@@ -29,12 +55,38 @@
   flex-direction: column;
 
   button {
+    box-shadow: unset;
+    position: relative;
+
+    &:before {
+      @include absolute(0 0 0 0);
+      content: '';
+      border-style: solid;
+      border-color: $border-color;
+      border-top-width: em($border-thickness-thin);
+      border-right-width: em($border-thickness);
+      border-bottom-width: em($border-thickness-thin);
+      border-left-width: em($border-thickness);
+    }
+
     &:first-child {
       @include radius($border-radius $border-radius x x, em);
+
+      &:before {
+        @include radius($border-radius $border-radius x x, em);
+        border-top-width: em($border-thickness);
+        border-bottom-width: em($border-thickness-thin);
+      }
     }
 
     &:last-child {
       @include radius(x x $border-radius $border-radius, em);
+
+      &:before {
+        @include radius(x x $border-radius $border-radius, em);
+        border-top-width: em($border-thickness-thin);
+        border-bottom-width: em($border-thickness);
+      }
     }
   }
 }
