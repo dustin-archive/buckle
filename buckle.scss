@@ -34,8 +34,13 @@
 @import 'themes/base/main';
 
 //
+// + Elements
+// =============================================
+@import 'elements/button';
+
+//
 // + Components
 // =============================================
 
-@import 'components/button/button';
+@import 'components/button-group/button-group';
 @import 'components/menu/menu';                 // Requires: icons
