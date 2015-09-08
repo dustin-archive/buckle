@@ -4,14 +4,20 @@
 
 
 @import '../../../bower_components/fontawesome/scss/variables';
-// @import '../../../bower_components/fontawesome/scss/mixins';
+$fa-font-path: '../../bower_components/fontawesome/fonts';
+
 @import '../../../bower_components/fontawesome/scss/path';
-// @import '../../../bower_components/fontawesome/scss/core';
-// @import '../../../bower_components/fontawesome/scss/larger';
-// @import '../../../bower_components/fontawesome/scss/fixed-width';
-// @import '../../../bower_components/fontawesome/scss/list';
-// @import '../../../bower_components/fontawesome/scss/bordered-pulled';
-// @import '../../../bower_components/fontawesome/scss/animated';
-// @import '../../../bower_components/fontawesome/scss/rotated-flipped';
-// @import '../../../bower_components/fontawesome/scss/stacked';
 @import '../../../bower_components/fontawesome/scss/icons';
+
+// @import 'variables';
+// @import 'mixins';
+// @import 'path';
+// @import 'core';
+// @import 'larger';
+// @import 'fixed-width';
+// @import 'list';
+// @import 'bordered-pulled';
+// @import 'animated';
+// @import 'rotated-flipped';
+// @import 'stacked';
+// @import 'icons';
