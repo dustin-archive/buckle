@@ -2,6 +2,7 @@
   display: flex;
 
   button {
+    border-radius: unset; // should check to see if needs to be unset?
     margin: unset;
   }
 }
@@ -12,17 +13,12 @@
   flex-direction: row;
 
   button {
-    border-left: 2px solid red;
-    border-right: 2px solid red;
-
     &:first-child {
-      border-left: unset;
-      border-right: 2px solid blue; // none
+      @include radius($border-radius x x $border-radius, em);
     }
 
     &:last-child {
-      border-left: 2px solid blue; // none
-      border-right: unset;
+      @include radius(x $border-radius $border-radius x, em);
     }
   }
 }
@@ -33,17 +29,12 @@
   flex-direction: column;
 
   button {
-    border-top: 2px solid red;
-    border-bottom: 2px solid red;
-
     &:first-child {
-      border-top: unset;
-      border-bottom: 2px solid blue; // none
+      @include radius($border-radius $border-radius x x, em);
     }
 
     &:last-child {
-      border-top: 2px solid blue; // none
-      border-bottom: unset;
+      @include radius(x x $border-radius $border-radius, em);
     }
   }
 }
