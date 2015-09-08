@@ -5,12 +5,5 @@ config.codekit
 .scss-lint.yml
 
 bower_components
-images
 dist
 index.html
-
-buckle/coffee/plugins/jquery.animate-auto.coffee
-
-buckle/scss/modules/_disabled
-buckle/scss/middlewares
-buckle/scss/themes/soda
