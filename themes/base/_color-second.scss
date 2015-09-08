@@ -3,20 +3,20 @@
 // =============================================
 
 
-$second: mix($black, $color-second, .75);
-$color-second-1:  rgba($second, .0625 * 1);
-$color-second-2:  rgba($second, .0625 * 2);
-$color-second-3:  rgba($second, .0625 * 3);
-$color-second-4:  rgba($second, .0625 * 4);
-$color-second-5:  rgba($second, .0625 * 5);
-$color-second-6:  rgba($second, .0625 * 6);
-$color-second-7:  rgba($second, .0625 * 7);
-$color-second-8:  rgba($second, .0625 * 8);
-$color-second-9:  rgba($second, .0625 * 9);
-$color-second-10: rgba($second, .0625 * 10);
-$color-second-11: rgba($second, .0625 * 11);
-$color-second-12: rgba($second, .0625 * 12);
-$color-second-13: rgba($second, .0625 * 13);
-$color-second-14: rgba($second, .0625 * 14);
-$color-second-15: rgba($second, .0625 * 15);
-$color-second-16: rgba($second, .0625 * 16);
+$second: mix($black, $color-second, .75) !default;
+$color-second-1:  rgba($second, .0625 * 1) !default;
+$color-second-2:  rgba($second, .0625 * 2) !default;
+$color-second-3:  rgba($second, .0625 * 3) !default;
+$color-second-4:  rgba($second, .0625 * 4) !default;
+$color-second-5:  rgba($second, .0625 * 5) !default;
+$color-second-6:  rgba($second, .0625 * 6) !default;
+$color-second-7:  rgba($second, .0625 * 7) !default;
+$color-second-8:  rgba($second, .0625 * 8) !default;
+$color-second-9:  rgba($second, .0625 * 9) !default;
+$color-second-10: rgba($second, .0625 * 10) !default;
+$color-second-11: rgba($second, .0625 * 11) !default;
+$color-second-12: rgba($second, .0625 * 12) !default;
+$color-second-13: rgba($second, .0625 * 13) !default;
+$color-second-14: rgba($second, .0625 * 14) !default;
+$color-second-15: rgba($second, .0625 * 15) !default;
+$color-second-16: rgba($second, .0625 * 16) !default;

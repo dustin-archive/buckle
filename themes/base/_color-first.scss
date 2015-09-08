@@ -3,20 +3,20 @@
 // =============================================
 
 
-$first: mix($black, $color-first);
-$color-first-1:  rgba($first, .0625 * 1);
-$color-first-2:  rgba($first, .0625 * 2);
-$color-first-3:  rgba($first, .0625 * 3);
-$color-first-4:  rgba($first, .0625 * 4);
-$color-first-5:  rgba($first, .0625 * 5);
-$color-first-6:  rgba($first, .0625 * 6);
-$color-first-7:  rgba($first, .0625 * 7);
-$color-first-8:  rgba($first, .0625 * 8);
-$color-first-9:  rgba($first, .0625 * 9);
-$color-first-10: rgba($first, .0625 * 10);
-$color-first-11: rgba($first, .0625 * 11);
-$color-first-12: rgba($first, .0625 * 12);
-$color-first-13: rgba($first, .0625 * 13);
-$color-first-14: rgba($first, .0625 * 14);
-$color-first-15: rgba($first, .0625 * 15);
-$color-first-16: rgba($first, .0625 * 16);
+$first: mix($black, $color-first) !default;
+$color-first-1:  rgba($first, .0625 * 1) !default;
+$color-first-2:  rgba($first, .0625 * 2) !default;
+$color-first-3:  rgba($first, .0625 * 3) !default;
+$color-first-4:  rgba($first, .0625 * 4) !default;
+$color-first-5:  rgba($first, .0625 * 5) !default;
+$color-first-6:  rgba($first, .0625 * 6) !default;
+$color-first-7:  rgba($first, .0625 * 7) !default;
+$color-first-8:  rgba($first, .0625 * 8) !default;
+$color-first-9:  rgba($first, .0625 * 9) !default;
+$color-first-10: rgba($first, .0625 * 10) !default;
+$color-first-11: rgba($first, .0625 * 11) !default;
+$color-first-12: rgba($first, .0625 * 12) !default;
+$color-first-13: rgba($first, .0625 * 13) !default;
+$color-first-14: rgba($first, .0625 * 14) !default;
+$color-first-15: rgba($first, .0625 * 15) !default;
+$color-first-16: rgba($first, .0625 * 16) !default;

@@ -4,22 +4,22 @@
 
 
 // Basic colors
-$white: #fff;
-$black: #000;
+$white: #fff !default;
+$black: #000 !default;
 
 // Theme Colors
-$color-first: rgb(0, 127, 191);
-$color-second: rgb(255, 127, 63);
-$background-color: $white;
+$color-first: rgb(0, 127, 191) !default;
+$color-second: rgb(255, 127, 63) !default;
+$background-color: $white !default;
 
 @import 'color-first';
 @import 'color-second';
 
 // Borders
-$border-radius: 4;
-$border-thickness: 2;
-$border-thickness-bold: $border-thickness*2;
-$border-color: $color-first-2;
+$border-radius: 4 !default;
+$border-thickness: 2 !default;
+$border-thickness-bold: $border-thickness*2 !default;
+$border-color: $color-first-2 !default;
 
 @import 'borders';
 
