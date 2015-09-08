@@ -6,4 +6,13 @@ button {
   background-color: $color-first-1;
   color: $color-first-8;
   box-shadow: $border;
+
+  &:hover,
+  &:focus {
+    background-color: $color-first-2;
+  }
+
+  &:active {
+    background-color: $color-first-3;
+  }
 }
