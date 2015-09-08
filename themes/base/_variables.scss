@@ -18,7 +18,6 @@ $background-color: $white !default;
 // Borders
 $border-radius: 4 !default;
 $border-thickness: 2 !default;
-$border-thickness-bold: $border-thickness*2 !default;
 $border-color: $color-first-2 !default;
 
 @import 'borders';
