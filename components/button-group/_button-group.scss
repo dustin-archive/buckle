@@ -1,5 +1,9 @@
 %button-group {
   display: flex;
+
+  button {
+    margin: unset;
+  }
 }
 
 .button-group-horizontal {
