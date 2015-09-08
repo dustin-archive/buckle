@@ -3,40 +3,32 @@
 // =============================================
 
 
-@mixin anchor($normal, $active) {
-  $color: nth($normal, 1);
-  $background: nth($normal, 2);
-
-  $active-color: nth($active, 1);
-  $active-background: nth($active, 2);
-
+%anchor-first {
   &,
   &:link,
   &:visited,
   &:active {
-    background: $background;
-    color: $color;
+    color: $color-first-8;
   }
 
   &:hover,
   &:focus {
-    background: $active-background;
-    color: $active-color;
+    color: $color-first-12;
   }
 }
 
-%anchor-first {
-  @include anchor(
-    $color-first-8 unset,
-    $color-first-12 unset
-  );
-}
-
 %anchor-second {
-  @include anchor(
-    $color-second-12 unset,
-    $color-second-16 unset
-  );
+  &,
+  &:link,
+  &:visited,
+  &:active {
+    color: $color-second-12;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-second-16;
+  }
 }
 
 a {

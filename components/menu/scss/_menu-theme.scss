@@ -14,10 +14,18 @@
   }
 
   a {
-    @include anchor(
-      $color-first-8 unset,
-      $white $color-first-8
-    );
+    &,
+    &:link,
+    &:visited,
+    &:active {
+      color: $color-first-8;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $color-first-8;
+      color: $white;
+    }
   }
 
   .toggled > a {
