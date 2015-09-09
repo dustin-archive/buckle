@@ -23,8 +23,22 @@
     }
   }
 
+  // %anchor-second {
+  //   &,
+  //   &:link,
+  //   &:visited,
+  //   &:active {
+  //     color: $color-second-12;
+  //   }
+  //
+  //   &:hover,
+  //   &:focus {
+  //     color: $color-second-16;
+  //   }
+  // }
+
   .title a {
-    @extend %anchor-second;
+    // @extend %anchor-second;
   }
 
   // .date {}

@@ -1,4 +1,7 @@
-%anchor-first {
+a {
+  text-decoration: none;
+  cursor: pointer;
+
   &,
   &:link,
   &:visited,
@@ -10,24 +13,4 @@
   &:focus {
     color: $color-first-12;
   }
-}
-
-%anchor-second {
-  &,
-  &:link,
-  &:visited,
-  &:active {
-    color: $color-second-12;
-  }
-
-  &:hover,
-  &:focus {
-    color: $color-second-16;
-  }
-}
-
-a {
-  @extend %anchor-first;
-  text-decoration: none;
-  cursor: pointer;
 }
