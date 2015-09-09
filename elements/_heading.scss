@@ -17,10 +17,11 @@
 
 @for $i from 1 through 6 {
   $heading-i: inverse(6, $i);
-  $heading-font-size: ($font-size / 4 * $i) + $font-size;
+  $heading-font-size: (($font-size / 4) * $i) + $font-size;
 
   h#{$heading-i} {
     @extend %heading;
+
     margin-top: em($line-height / 2, $heading-font-size);
     font-size: em($heading-font-size);
 
