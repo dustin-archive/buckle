@@ -3,32 +3,34 @@
     h4
       a(href='#heading') # Blockquote
     br
-    
+
     .grid-blockquote
       .column-blockquote
         p: code blockquote
+        blockquote
+          include lorem.md
+          hr
+          footer
+            include lorem.md
+
         pre.
           blockquote
             include lorem.md
             hr
             footer
               include lorem.md
-        blockquote
+
+      .column-blockquote
+        p: code blockquote.reverse
+        blockquote.reverse
           include lorem.md
           hr
           footer
             include lorem.md
-            
-      .column-blockquote
-        p: code blockquote.reverse
+
         pre.
           blockquote.reverse
-            include lorem.md 
+            include lorem.md
             hr
             footer
               include lorem.md
-        blockquote.reverse
-          include lorem.md 
-          hr
-          footer
-            include lorem.md
