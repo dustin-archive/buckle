@@ -8,55 +8,25 @@
 }
 
 // Headings
-.grid-heading {
-  @include grid(3);
-}
-
-.column-heading {
-  @include column(4);
-}
+.grid-heading { @include grid(3); }
+.column-heading { @include column(4); }
 
 // Code
-.grid-code {
-  @include grid(2);
-}
-
-.column-code {
-  @include column(6);
-}
+.grid-code { @include grid(2); }
+.column-code { @include column(6); }
 
 // Blockquote
-.grid-blockquote {
-  @include grid(2);
-}
-
-.column-blockquote {
-  @include column(6);
-}
+.grid-blockquote { @include grid(2); }
+.column-blockquote { @include column(6); }
 
 // Horizontal-rule
-.grid-horizontal-rule {
-  @include grid(2);
-}
-
-.column-horizontal-rule {
-  @include column(6);
-}
+.grid-horizontal-rule { @include grid(2); }
+.column-horizontal-rule { @include column(6); }
 
 // List
-.grid-list {
-  @include grid(3);
-}
-
-.column-list {
-  @include column(4);
-}
+.grid-list { @include grid(2); }
+.column-list { @include column(6); }
 
 // Button
-.grid-button {
-  @include grid(3);
-}
-
-.column-button {
-  @include column(4);
-}
+.grid-button { @include grid(3); }
+.column-button { @include column(4); }
