@@ -22,5 +22,11 @@ $border-color: $color-first-2 !default;
 
 @import 'borders';
 
-// Fonts
-// $display-font: ;
+// Typography
+$font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$font-family-headings: $font-family;
+
+$font-size: 16;
+$line-height: 32;
+
+@import 'typography';

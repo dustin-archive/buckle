@@ -1,0 +1,15 @@
+//
+// + Code
+// =============================================================================
+
+
+hr {
+  @include margin($margin-top x x x, em);
+
+  height: em($border-thickness);
+  background-color: $color-first-2;
+
+  &.bold {
+    height: em($border-thickness-bold);
+  }
+}

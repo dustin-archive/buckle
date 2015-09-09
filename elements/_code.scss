@@ -1,6 +1,6 @@
 //
 // + Code
-// =============================================
+// =============================================================================
 
 
 %monospace {
@@ -11,23 +11,29 @@ samp,
 code {
   @extend %highlight;
   @extend %monospace;
-  @include padding($line-height/8 $line-height/4, em);
+
+  @include padding(($line-height / 8) ($line-height / 4), em);
+
   box-shadow: $border-top;
 }
 
 kbd {
   @extend %highlight;
   @extend %monospace;
-  @include padding($line-height/8 $line-height/4, em);
-  @include margin(x $line-height/8, em);
+
+  @include padding(($line-height / 8) ($line-height / 4), em);
+  @include margin(x ($line-height / 8), em);
+
   box-shadow: $border-bottom;
 }
 
 pre {
   @extend %block;
   @extend %monospace;
-  @include padding($line-height/2 $line-height, em);
-  margin-top: em($line-height/2);
+
+  @include padding(($line-height / 2) $line-height, em);
+
+  margin-top: em($line-height / 2);
   line-height: 1.25;
   overflow: auto;
   word-wrap: normal;

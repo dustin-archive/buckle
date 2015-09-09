@@ -1,12 +1,12 @@
 //
 // + Blockquote
-// =============================================
+// =============================================================================
 
 
 blockquote {
   @extend %block-margin-top;
-  @include padding($line-height/2 $line-height, em);
-  margin-top: em($line-height/2);
+  @include padding(($line-height / 2) $line-height, em);
+  margin-top: em($line-height / 2);
   border-radius: 0 em($border-radius) em($border-radius) 0;
   background-color: $color-first-1;
   color: $color-first-8;
@@ -16,7 +16,6 @@ blockquote {
     border-radius: em($border-radius) 0 0 em($border-radius);
     text-align: right;
     box-shadow: $border-right-bold;
-
   }
 
   footer {

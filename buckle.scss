@@ -2,17 +2,17 @@
 // The MIT License (MIT)
 // Copyright (c) 2015 Dustin Dowell
 // github.com/dustindowell22/buckle
-// =============================================
+// =============================================================================
 
 //
 // + Imports
-// =============================================
+// =============================================================================
 
 @import 'lib/scss/imports/font-awesome';
 
 //
 // + Functions
-// =============================================
+// =============================================================================
 
 @import 'lib/scss/functions/inverse';
 @import 'lib/scss/functions/color-mixers';
@@ -20,7 +20,7 @@
 
 //
 // + Mixins
-// =============================================
+// =============================================================================
 
 @import 'lib/scss/mixins/lifesaver/main';
 @import 'lib/scss/mixins/flex-align';           // Requires: lifesaver (is-null)
@@ -29,22 +29,26 @@
 
 //
 // + Theme
-// =============================================
+// =============================================================================
 
 @import 'themes/base/main';
 
 //
 // + Elements
-// =============================================
+// =============================================================================
 
 @import 'elements/anchor';
+@import 'elements/blockquote';
+@import 'elements/body';
 @import 'elements/button';
+@import 'elements/code';
 @import 'elements/heading';
+@import 'elements/horizontal-rule';
 @import 'elements/list';
 
 //
 // + Components
-// =============================================
+// =============================================================================
 
 @import 'components/button-group/button-group';
-@import 'components/menu/menu';                 // Requires: icons
+@import 'components/menu/menu';                               // Requires: icons
