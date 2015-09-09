@@ -7,4 +7,4 @@ config.codekit
 bower_components
 dist
 index.html
-_snippets.scss
+snippets
