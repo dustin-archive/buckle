@@ -12,8 +12,3 @@ p {
     vertical-align: middle;
   }
 }
-
-svg {
-  width: 100%;
-  transform: translateZ(0); // Fixes blurry SVGs when using filters
-}
