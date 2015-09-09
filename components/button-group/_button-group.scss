@@ -3,48 +3,34 @@
 
   button {
     border-radius: unset; // should check to see if needs to be unset?
-    margin: unset;
+    flex: 1;
+
+    &:hover,
+    &:focus {
+      background-color: mix(rgba($color-first-2, 1), $white, alpha($color-first-2) * 100); // make a Convert alpha to color mixing function
+      z-index: 1;
+    }
+
+    &:active {
+      background-color: mix(rgba($color-first-3, 1), $white, alpha($color-first-3) * 100);
+    }
   }
 }
 
 .button-group-horizontal {
   @extend %button-group;
 
-  flex-direction: row;
-
   button {
-    box-shadow: unset;
-    position: relative;
-
-    &:before {
-      @include absolute(0 0 0 0);
-      content: '';
-      border-style: solid;
-      border-color: $border-color;
-      border-top-width: em($border-thickness);
-      border-right-width: em($border-thickness-thin);
-      border-bottom-width: em($border-thickness);
-      border-left-width: em($border-thickness-thin);
-    }
+    @include margin(x x x (-$border-thickness), em);
 
     &:first-child {
       @include radius($border-radius x x $border-radius, em);
-
-      &:before {
-        @include radius($border-radius x x $border-radius, em);
-        border-left-width: em($border-thickness);
-        border-right-width: em($border-thickness-thin);
-      }
+      @include margin(x x x 0, em);
     }
 
     &:last-child {
       @include radius(x $border-radius $border-radius x, em);
-
-      &:before {
-        @include radius(x $border-radius $border-radius x, em);
-        border-left-width: em($border-thickness-thin);
-        border-right-width: em($border-thickness);
-      }
+      @include margin(x (-$border-thickness) x x, em);
     }
   }
 }
@@ -55,38 +41,16 @@
   flex-direction: column;
 
   button {
-    box-shadow: unset;
-    position: relative;
-
-    &:before {
-      @include absolute(0 0 0 0);
-      content: '';
-      border-style: solid;
-      border-color: $border-color;
-      border-top-width: em($border-thickness-thin);
-      border-right-width: em($border-thickness);
-      border-bottom-width: em($border-thickness-thin);
-      border-left-width: em($border-thickness);
-    }
+    @include margin((-$border-thickness) x x x, em);
 
     &:first-child {
       @include radius($border-radius $border-radius x x, em);
-
-      &:before {
-        @include radius($border-radius $border-radius x x, em);
-        border-top-width: em($border-thickness);
-        border-bottom-width: em($border-thickness-thin);
-      }
+      @include margin(0 x x x, em);
     }
 
     &:last-child {
       @include radius(x x $border-radius $border-radius, em);
-
-      &:before {
-        @include radius(x x $border-radius $border-radius, em);
-        border-top-width: em($border-thickness-thin);
-        border-bottom-width: em($border-thickness);
-      }
+      @include margin(x x (-$border-thickness) x, em);
     }
   }
 }
