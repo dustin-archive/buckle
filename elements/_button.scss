@@ -1,6 +1,5 @@
 button {
   @include padding(x 16, em);
-
   border-radius: em($border-radius);
   outline: unset;
   background-color: $white;

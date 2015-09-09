@@ -1,7 +1,6 @@
 ul,
 ol {
   @include margin(($line-height / 4) x x ($line-height / 2), em);
-
   list-style-position: inside;
 
   ul,
