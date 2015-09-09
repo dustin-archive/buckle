@@ -3,7 +3,9 @@
 // =============================================
 
 
-$margin-top: $line-height / 4; // needs a new name
+$font-headings: $font-first !default;
 
-$gutter-width: $line-height;
-$gutter-height: $line-height / 2;
+$margin-top: $line-height / 4 !default; // needs a new name
+
+$gutter-width: $line-height !default;
+$gutter-height: $line-height / 2 !default;

@@ -3,37 +3,27 @@
 // =============================================================================
 
 
-%monospace {
-  font-family: 'SourceCodePro-Medium', monospace;
-}
-
 samp,
 code {
   @extend %highlight;
-  @extend %monospace;
-
   @include padding(($line-height / 8) ($line-height / 4), em);
-
+  font-family: $font-monospace;
   box-shadow: $border-top;
 }
 
 kbd {
   @extend %highlight;
-  @extend %monospace;
-
   @include padding(($line-height / 8) ($line-height / 4), em);
   @include margin(x ($line-height / 8), em);
-
+  font-family: $font-monospace;
   box-shadow: $border-bottom;
 }
 
 pre {
   @extend %block;
-  @extend %monospace;
-
   @include padding(($line-height / 2) $line-height, em);
-
   margin-top: em($line-height / 2);
+  font-family: $font-monospace;
   line-height: 1.25;
   overflow: auto;
   word-wrap: normal;

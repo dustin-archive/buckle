@@ -23,10 +23,11 @@ $border-color: $color-first-2 !default;
 @import 'borders';
 
 // Typography
-$font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-$font-family-headings: $font-family;
+$font-first: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$font-second: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$font-monospace: 'SourceCodePro-Medium', monospace !default;
 
-$font-size: 16;
-$line-height: 32;
+$font-size: 16 !default;
+$line-height: 32 !default;
 
 @import 'typography';
