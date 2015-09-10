@@ -1,0 +1,30 @@
+//
+// + Images
+// =============================================================================
+
+
+// I'm unsure about this p tag. Is there a better place for stuff like this?
+p {
+  img,
+  svg {
+    max-width: 100%;
+    float: left;
+    border-radius: $border-radius;
+    vertical-align: middle;
+  }
+}
+
+img {
+  $img-gutter-height: $gutter-height / 2;
+  $img-gutter-width: $gutter-width / 2;
+
+  &.left {
+    @include margin($img-gutter-height $img-gutter-width $img-gutter-height x, em);
+    float: left;
+  }
+
+  &.right {
+    @include margin($img-gutter-height x $img-gutter-height $img-gutter-width, em);
+    float: right;
+  }
+}
