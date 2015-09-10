@@ -12,12 +12,12 @@
 
     &:hover,
     &:focus {
-      background-color: mix(rgba($color-first-2, 1), $white, alpha($color-first-2) * 100); // make a Convert alpha to color mixing function
+      background-color: remove-alpha($color-first-2, $white);
       z-index: 1;
     }
 
     &:active {
-      background-color: mix(rgba($color-first-3, 1), $white, alpha($color-first-3) * 100);
+      background-color: remove-alpha($color-first-3, $white);
     }
   }
 }
