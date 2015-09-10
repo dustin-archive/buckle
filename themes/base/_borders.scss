@@ -1,6 +1,6 @@
 //
 // + Borders
-// =============================================
+// =============================================================================
 
 
 $border: inset 0 0 0 em($border-thickness) $border-color !default;
@@ -9,14 +9,14 @@ $border-bottom: inset 0 em(-$border-thickness) 0 0 $border-color !default;
 $border-left: inset em($border-thickness) 0 0 0 $border-color !default;
 $border-right: inset em(-$border-thickness) 0 0 0 $border-color !default;
 
-$border-thickness-bold: $border-thickness*2 !default;
+$border-thickness-bold: $border-thickness * 2 !default;
 $border-bold: inset 0 0 0 em($border-thickness-bold) $border-color !default;
 $border-top-bold: inset 0 em($border-thickness-bold) 0 0 $border-color !default;
 $border-bottom-bold: inset 0 em(-$border-thickness-bold) 0 0 $border-color !default;
 $border-left-bold: inset em($border-thickness-bold) 0 0 0 $border-color !default;
 $border-right-bold: inset em(-$border-thickness-bold) 0 0 0 $border-color !default;
 
-$border-thickness-thin: $border-thickness/2 !default;
+$border-thickness-thin: $border-thickness / 2 !default;
 $border-thin: inset 0 0 0 em($border-thickness-thin) $border-color !default;
 $border-top-thin: inset 0 em($border-thickness-thin) 0 0 $border-color !default;
 $border-bottom-thin: inset 0 em(-$border-thickness-thin) 0 0 $border-color !default;

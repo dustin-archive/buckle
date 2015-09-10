@@ -1,10 +1,10 @@
 //
 // + jquery.drop-down.js
-// =============================================
+// =============================================================================
 
 
 .menu-drawer {
-  > ul > .toggled > ul { // SCSS Lint: I know what I'm doing here.
+  > ul > .toggled > ul {
     @at-root .menu-dropdown & {
       @include breakpoint(6) {
         transform: translateY(em(8)); // Distance between buttons and menus on desktop

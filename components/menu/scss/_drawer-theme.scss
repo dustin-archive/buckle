@@ -1,6 +1,6 @@
 //
-// + Menu Drawer Theme
-// =============================================
+// + Drawer theme
+// =============================================================================
 
 
 .menu-drawer {
@@ -17,7 +17,7 @@
   ul ul {
     background-color: $color-first-1;
 
-    @at-root .menu-dropdown & { // SCSS Lint: I know what I'm doing here.
+    @at-root .menu-dropdown & {
       @include breakpoint(6) {
         border-radius: em($border-radius);
         background-color: $background-color;
@@ -25,11 +25,11 @@
       }
     }
 
-    ul { // SCSS Lint: I know what I'm doing here.
+    ul {
       background-color: $color-first-1 !important; // SCSS Lint: I know what I'm doing here.
       box-shadow: none !important; // SCSS Lint: I know what I'm doing here.
 
-      @at-root .menu-dropdown & { // SCSS Lint: I know what I'm doing here.
+      @at-root .menu-dropdown & {
         @include breakpoint(6) {
           border-radius: unset;
         }

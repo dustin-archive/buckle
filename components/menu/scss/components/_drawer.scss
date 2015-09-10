@@ -1,6 +1,6 @@
 //
 // + Menu Drawer
-// =============================================
+// =============================================================================
 
 
 .menu-drawer {
@@ -49,7 +49,7 @@
         }
       }
 
-      ul { // SCSS Lint: I know what I'm doing here.
+      ul {
         @at-root .menu-dropdown & {
           @include breakpoint(6) {
             @include padding(unset x, em); // Remove drawer padding for nested drawers on desktop
