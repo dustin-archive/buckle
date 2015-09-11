@@ -22,6 +22,10 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: $font-first;
   line-height: un($line-height);
