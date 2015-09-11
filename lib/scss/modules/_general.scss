@@ -21,3 +21,8 @@
   word-wrap: break-word;
   box-sizing: border-box;
 }
+
+body {
+  font-family: $font-first;
+  line-height: un($line-height);
+}
