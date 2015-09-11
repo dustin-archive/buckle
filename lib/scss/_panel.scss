@@ -33,8 +33,14 @@ $panel-margin: $line-height / 4; // add to variables theme file?
   &:hover,
   &:focus {
     background-color: remove-alpha($color-first-2, $white);
-    z-index: 2; // is there a way to delay this until transition is complete?
+    z-index: 2; // is there a way to delay this until transition-out is complete?
   }
+
+  // Imaginary CSS pseudo selector
+  // Create an equivalent in JS using transitionend
+  // &:transition-duration {
+  //   z-index: 2;
+  // }
 
   &:active {
     background-color: remove-alpha($color-first-3, $white);
