@@ -2,9 +2,14 @@
 .codekit-cache
 config.codekit
 .sass-cache
+.sass-lint.yml
 .scss-lint.yml
 
+node_modules
 bower_components
 dist
 index.html
 _snippets
+
+gulpfile.coffee
+package.json
