@@ -6,29 +6,30 @@
 .input-group-horizontal,
 .input-group-vertical {
   display: flex;
+  flex: 1;
 
-  input,
-  button {
+  > input,
+  > button {
     border-radius: unset; // should check to see if needs to be unset?
     flex: 1;
   }
 
-  input {
+  > input {
     &:hover,
     &:focus {
       z-index: 2;
     }
   }
 
-  input[type='button'],
-  button {
+  > input[type='button'],
+  > button {
     &:hover,
     &:focus {
       z-index: 1;
     }
   }
 
-  input[type='text'] {
+  > input[type='text'] {
     &:focus {
       flex: 4;
     }
@@ -36,8 +37,8 @@
 }
 
 .input-group-horizontal {
-  input,
-  button {
+  > input,
+  > button {
     margin-left: em(-$border-thickness);
 
     &:first-child {
@@ -55,8 +56,8 @@
 .input-group-vertical {
   flex-direction: column;
 
-  input,
-  button {
+  > input,
+  > button {
     margin-top: em(-$border-thickness);
 
     &:first-child {
