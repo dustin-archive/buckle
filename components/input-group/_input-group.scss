@@ -3,28 +3,36 @@
 // =============================================================================
 
 * {
-  transition: all 0.25s;
+  transition: all .25s;
 }
-
 
 .input-group-horizontal,
 .input-group-vertical {
   display: flex;
 
-  input[type='text'] {
-    &:focus {
-      flex: 4;
-    }
-  }
-
   input,
   button {
     border-radius: unset; // should check to see if needs to be unset?
     flex: 1;
+  }
 
+  input {
+    &:hover,
+    &:focus {
+      z-index: 2;
+    }
+  }
+
+  button {
     &:hover,
     &:focus {
       z-index: 1;
+    }
+  }
+
+  input[type='text'] {
+    &:focus {
+      flex: 4;
     }
   }
 }
