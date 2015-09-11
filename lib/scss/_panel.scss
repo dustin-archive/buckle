@@ -17,6 +17,18 @@ $panel-margin: $line-height / 4; // add to variables theme file?
     margin-top: 0;
   }
 
+  + %panel-group {
+    margin-top: em($panel-margin);
+  }
+
+  @at-root .transparent & {
+    background-color: unset;
+  }
+}
+
+%panel-interactive {
+  @extend %panel;
+
   &:hover,
   &:focus {
     background-color: remove-alpha($color-first-3, $white);
@@ -27,13 +39,7 @@ $panel-margin: $line-height / 4; // add to variables theme file?
     background-color: remove-alpha($color-first-3, $white);
   }
 
-  + %panel-group {
-    margin-top: em($panel-margin);
-  }
-
   @at-root .transparent & {
-    background-color: unset;
-
     &:hover,
     &:focus {
       background-color: $color-first-3;
