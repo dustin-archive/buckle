@@ -1,0 +1,29 @@
+//
+// + Commit
+// =============================================================================
+
+
+.commit {
+  @extend button;
+  @include padding(16, em);
+  display: flex;
+}
+
+.commit-left,
+.commit-right {
+  display: flex;
+}
+
+.commit-left {
+  flex: 1;
+}
+
+.commit-right {
+  .input-group-horizontal {
+    margin-right: em(16);
+
+    button {
+      flex: unset;
+    }
+  }
+}
