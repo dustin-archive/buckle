@@ -1,30 +1,36 @@
 //
-// + Button group
+// + Input group
 // =============================================================================
 
+* {
+  transition: all 0.25s;
+}
 
-%button-group {
+
+.input-group-horizontal,
+.input-group-vertical {
   display: flex;
 
+  input[type='text'] {
+    &:focus {
+      flex: 4;
+    }
+  }
+
+  input,
   button {
     border-radius: unset; // should check to see if needs to be unset?
     flex: 1;
 
     &:hover,
     &:focus {
-      background-color: remove-alpha($color-first-2, $white);
       z-index: 1;
-    }
-
-    &:active {
-      background-color: remove-alpha($color-first-3, $white);
     }
   }
 }
 
-.button-group-horizontal {
-  @extend %button-group;
-
+.input-group-horizontal {
+  input,
   button {
     margin-left: em(-$border-thickness);
 
@@ -40,10 +46,10 @@
   }
 }
 
-.button-group-vertical {
-  @extend %button-group;
+.input-group-vertical {
   flex-direction: column;
 
+  input,
   button {
     margin-top: em(-$border-thickness);
 

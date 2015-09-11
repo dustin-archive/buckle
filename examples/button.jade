@@ -1,7 +1,7 @@
 .wrapper
   .center
     h4
-      a(href='#button') # Button
+      a(href='#input') # Input
     br
 
     .grid-button
@@ -14,8 +14,8 @@
         button Button
 
       .column-button
-        p: code .button-group-horizontal button
-        .button-group-horizontal
+        p: code .input-group-horizontal button
+        .input-group-horizontal
           button Button
           button Button
           button Button
@@ -23,10 +23,16 @@
           button Button
 
       .column-button
-        p: code .button-group-vertical button
-        .button-group-vertical
+        p: code .input-group-vertical button
+        .input-group-vertical
           button Button
           button Button
           button Button
           button Button
           button Button
+
+      .column-button
+        p: code .input-group-vertical button
+        .input-group-horizontal
+          input(type='text' name='Search')
+          button Search

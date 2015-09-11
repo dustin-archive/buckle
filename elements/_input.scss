@@ -1,0 +1,41 @@
+//
+// + Input
+// =============================================================================
+
+
+input {
+  @include padding(x 16, em);
+  border-radius: em($border-radius);
+  outline: unset;
+  background-color: $white;
+  color: $color-first-8;
+  box-shadow: $border;
+
+  &[type='text'] {
+    &:focus {
+      box-shadow: inset 0 0 0 em($border-thickness) remove-alpha($border-color, $color-first-2);
+      z-index: 2;
+    }
+  }
+
+  // Buttons
+  &[type='button'],
+  &[type='submit'] {
+    &:hover,
+    &:focus {
+      background-color: $color-first-2;
+    }
+
+    &:active {
+      background-color: $color-first-3;
+    }
+  }
+
+  @at-root .transparent & {
+    background-color: unset;
+
+    &:focus {
+      box-shadow: inset 0 0 0 em($border-thickness) layer-colors($border-color, $color-first-2);
+    }
+  }
+}

@@ -13,10 +13,23 @@ button {
 
   &:hover,
   &:focus {
-    background-color: $color-first-2;
+    background-color: remove-alpha($color-first-2, $white);
   }
 
   &:active {
-    background-color: $color-first-3;
+    background-color: remove-alpha($color-first-3, $white);
+  }
+
+  @at-root .transparent & {
+    background-color: unset;
+
+    &:hover,
+    &:focus {
+      background-color: $color-first-2;
+    }
+
+    &:active {
+      background-color: $color-first-3;
+    }
   }
 }
