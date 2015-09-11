@@ -1,0 +1,17 @@
+//
+// + Layer colors
+// =============================================================================
+
+
+@function layer-colors($above, $below) {
+  $above-color: rgba($above, 1);
+  $below-color: rgba($below, 1);
+
+  $above-alpha: alpha($above);
+  $below-alpha: alpha($below);
+
+  $mix: mix($above-color, $below-color);
+  $alpha: $below-alpha + (1 - $below-alpha) * $above-alpha;
+
+  @return rgba($mix, $alpha);
+}
