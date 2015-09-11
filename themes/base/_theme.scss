@@ -27,6 +27,6 @@
 .grid-list { @include grid(2); }
 .column-list { @include column(6); }
 
-// Button
-.grid-button { @include grid(3); }
-.column-button { @include column(4); }
+// Input
+.grid-input { @include grid(3); }
+.column-input { @include column(4); }
