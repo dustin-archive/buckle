@@ -31,6 +31,8 @@ input {
     }
 
     @at-root .transparent & { // THIS COULD BE A PLACEHOLDER?? IT'S ALSO USED IN BUTTON
+      background-color: unset;
+
       &:hover,
       &:focus {
         background-color: $color-first-2;

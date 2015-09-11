@@ -22,6 +22,8 @@ button {
   }
 
   @at-root .transparent & { // MAKE A PLACEHOLDER? ALSO USED IN INPUT
+    background-color: unset;
+
     &:hover,
     &:focus {
       background-color: $color-first-2;
