@@ -37,26 +37,27 @@
 @import 'themes/base/main';
 
 //
-// + Placeholders
+// + General
 // =============================================================================
 
+@import 'lib/scss/clearfix';
+@import 'lib/scss/general';
 @import 'lib/scss/placeholders';
 
 //
 // + Elements
 // =============================================================================
 
-@import 'elements/anchor';
-@import 'elements/blockquote';
-@import 'elements/body';
-@import 'elements/button';
-@import 'elements/code';
-@import 'elements/heading';
-@import 'elements/horizontal-rule';
-@import 'elements/image';
-@import 'elements/input';
-@import 'elements/list';
-@import 'elements/svg';
+@import 'lib/scss/elements/anchor';
+@import 'lib/scss/elements/blockquote';
+@import 'lib/scss/elements/button';
+@import 'lib/scss/elements/code';
+@import 'lib/scss/elements/heading';
+@import 'lib/scss/elements/horizontal-rule';
+@import 'lib/scss/elements/image';
+@import 'lib/scss/elements/input';
+@import 'lib/scss/elements/list';
+@import 'lib/scss/elements/svg';
 
 //
 // + Components
