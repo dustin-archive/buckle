@@ -6,22 +6,23 @@ html(lang='en-us')
 
     title Buckle
 
-    // Bower
+    //- Bower
     link(rel='stylesheet' href='bower_components/normalize-css/normalize.css')
 
-    // Buckle
+    //- Buckle
     link(href='dist/css/buckle.css', rel='stylesheet', type='text/css')
 
-  body
+  //- body.transparent(style='background-color: rgba(255, 95, 0, .25)')
+  body(style='background-color: rgba(255, 95, 0, .25)')
     include examples/menu.jade
-    
+
     #page.page
       include examples/header.jade
-      
-      // Modules
+
+      //- Modules
       //- include examples/blog.jade
-      
-      // examples
+
+      //- examples
       //- include examples/menu-sidebar.jade
       include examples/heading.jade
       include examples/code.jade
@@ -29,9 +30,9 @@ html(lang='en-us')
       include examples/horizontal-rule.jade
       include examples/list.jade
       include examples/button.jade
-      
-    // Bower
+
+    //- Bower
     script(src='bower_components/jquery/dist/jquery.min.js')
 
-    // Buckle
+    //- Buckle
     script(src='dist/js/jquery.buckle.js')
