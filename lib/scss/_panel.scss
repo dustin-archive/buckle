@@ -20,6 +20,7 @@ $panel-margin: $line-height / 4; // add to variables theme file?
   &:hover,
   &:focus {
     background-color: remove-alpha($color-first-3, $white);
+    z-index: 2; // is there a way to delay this until transition is complete?
   }
 
   &:active {
@@ -53,6 +54,7 @@ $panel-margin: $line-height / 4; // add to variables theme file?
 
   %panel {
     margin: 0;
+    border-radius: unset; // check if needs unset based on $border-radius variable?
     flex: 1;
   }
 }
@@ -70,7 +72,7 @@ $panel-margin: $line-height / 4; // add to variables theme file?
 
     &:last-child {
       @include radius(x $border-radius $border-radius x, em);
-      margin-right: em(-$border-thickness);
+      // margin-right: em(-$border-thickness); // only needed for flex items?
     }
   }
 }
@@ -89,7 +91,7 @@ $panel-margin: $line-height / 4; // add to variables theme file?
 
     &:last-child {
       @include radius(x x $border-radius $border-radius, em);
-      margin-bottom: em(-$border-thickness);
+      // margin-bottom: em(-$border-thickness); // only needed for flex items?
     }
   }
 }
