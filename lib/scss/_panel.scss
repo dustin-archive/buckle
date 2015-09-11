@@ -23,7 +23,7 @@ $panel-margin: $line-height / 4; // add to variables theme file?
   }
 
   @at-root .transparent & {
-    background-color: unset;
+    background-color: $color-first-1;
   }
 }
 
@@ -32,7 +32,7 @@ $panel-margin: $line-height / 4; // add to variables theme file?
 
   &:hover,
   &:focus {
-    background-color: remove-alpha($color-first-3, $white);
+    background-color: remove-alpha($color-first-2, $white);
     z-index: 2; // is there a way to delay this until transition is complete?
   }
 
@@ -43,7 +43,7 @@ $panel-margin: $line-height / 4; // add to variables theme file?
   @at-root .transparent & {
     &:hover,
     &:focus {
-      background-color: $color-first-3;
+      background-color: $color-first-2;
     }
 
     &:active {
