@@ -59,7 +59,8 @@ $panel-margin: $line-height / 4; // add to variables theme file?
     margin-top: em($panel-margin);
   }
 
-  %panel {
+  %panel,
+  %panel-interactive {
     margin: 0;
     border-radius: if($border-radius == null, null, unset);
     flex: 1;
@@ -69,7 +70,8 @@ $panel-margin: $line-height / 4; // add to variables theme file?
 %panel-group-horizontal {
   @extend %panel-group;
 
-  %panel {
+  %panel,
+  %panel-interactive {
     margin-left: em(-$border-thickness);
 
     &:first-child {
@@ -79,7 +81,7 @@ $panel-margin: $line-height / 4; // add to variables theme file?
 
     &:last-child {
       @include radius(x $border-radius $border-radius x, em);
-      // margin-right: em(-$border-thickness); // only needed for flex items?
+      // margin-right: em(-$border-thickness); // only needed for flex items? - this is a flex item you dummy. why was this a thing ever?
     }
   }
 }
@@ -88,7 +90,8 @@ $panel-margin: $line-height / 4; // add to variables theme file?
   @extend %panel-group;
   flex-direction: column;
 
-  %panel {
+  %panel,
+  %panel-interactive {
     margin-top: em(-$border-thickness);
 
     &:first-child {
@@ -98,7 +101,7 @@ $panel-margin: $line-height / 4; // add to variables theme file?
 
     &:last-child {
       @include radius(x x $border-radius $border-radius, em);
-      // margin-bottom: em(-$border-thickness); // only needed for flex items?
+      // margin-bottom: em(-$border-thickness); // only needed for flex items? - this is a flex item you dummy. why was this a thing ever?
     }
   }
 }
@@ -106,6 +109,10 @@ $panel-margin: $line-height / 4; // add to variables theme file?
 // Test classes
 .panel {
   @extend %panel;
+
+  &.interactive {
+    @extend %panel-interactive;
+  }
 }
 
 .panel-group-horizontal {

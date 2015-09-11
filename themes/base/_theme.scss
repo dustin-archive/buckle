@@ -30,3 +30,7 @@
 // Input
 .grid-input { @include grid(3); }
 .column-input { @include column(4); }
+
+// Input
+.grid-panel { @include grid(2); }
+.column-panel { @include column(6); }
