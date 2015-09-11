@@ -60,7 +60,7 @@ $panel-margin: $line-height / 4; // add to variables theme file?
 
   %panel {
     margin: 0;
-    border-radius: unset; // check if needs unset based on $border-radius variable?
+    border-radius: if($border-radius == null, null, unset);
     flex: 1;
   }
 }
