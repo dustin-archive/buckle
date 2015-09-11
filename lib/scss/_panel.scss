@@ -1,0 +1,108 @@
+//
+// + Panel
+// =============================================================================
+
+
+$panel-margin: $line-height / 4; // add to variables theme file?
+
+%panel {
+  @include padding(x 16, em);
+  margin-top: em($panel-margin);
+  border-radius: em($border-radius);
+  background-color: $white;
+  color: $color-first-8;
+  box-shadow: $border;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: remove-alpha($color-first-3, $white);
+  }
+
+  &:active {
+    background-color: remove-alpha($color-first-3, $white);
+  }
+
+  + %panel-group {
+    margin-top: em($panel-margin);
+  }
+
+  @at-root .transparent & {
+    background-color: unset;
+
+    &:hover,
+    &:focus {
+      background-color: $color-first-3;
+    }
+
+    &:active {
+      background-color: $color-first-3;
+    }
+  }
+}
+
+%panel-group {
+  display: flex;
+
+  & + & {
+    margin-top: em($panel-margin);
+  }
+
+  %panel {
+    margin: 0;
+    flex: 1;
+  }
+}
+
+%panel-group-horizontal {
+  @extend %panel-group;
+
+  %panel {
+    margin-left: em(-$border-thickness);
+
+    &:first-child {
+      @include radius($border-radius x x $border-radius, em);
+      margin-left: 0;
+    }
+
+    &:last-child {
+      @include radius(x $border-radius $border-radius x, em);
+      margin-right: em(-$border-thickness);
+    }
+  }
+}
+
+%panel-group-vertical {
+  @extend %panel-group;
+  flex-direction: column;
+
+  %panel {
+    margin-top: em(-$border-thickness);
+
+    &:first-child {
+      @include radius($border-radius $border-radius x x, em);
+      margin-top: 0;
+    }
+
+    &:last-child {
+      @include radius(x x $border-radius $border-radius, em);
+      margin-bottom: em(-$border-thickness);
+    }
+  }
+}
+
+// Test classes
+.panel {
+  @extend %panel;
+}
+
+.panel-group-horizontal {
+  @extend %panel-group-horizontal;
+}
+
+.panel-group-vertical {
+  @extend %panel-group-vertical;
+}

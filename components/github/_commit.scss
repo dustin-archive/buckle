@@ -3,9 +3,17 @@
 // =============================================================================
 
 
+.commit-group-vertical {
+  @extend %panel-group-vertical;
+}
+
+.commit-group-horizontal {
+  @extend %panel-group-horizontal;
+}
+
 .commit {
-  @extend button;
-  @include padding(16, em);
+  @extend %panel;
+  @include padding(8 16, em);
   display: flex;
 }
 
@@ -19,11 +27,16 @@
 }
 
 .commit-right {
-  .input-group-horizontal {
-    margin-right: em(16);
+  @include padding(8 x, em);
 
-    button {
-      flex: unset;
-    }
+  .commit-group-horizontal {
+    margin-right: em(16);
   }
+}
+
+.commit-avatar {
+  @include size(48, em);
+  @include min-size(48, em);
+  border-radius: 50%;
+  background-color: $color-first-2;
 }
