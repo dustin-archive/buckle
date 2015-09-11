@@ -16,6 +16,7 @@
 
 @import 'lib/scss/functions/color-mixers';
 @import 'lib/scss/functions/inverse';
+@import 'lib/scss/functions/layer-colors';
 @import 'lib/scss/functions/remove-alpha';
 @import 'lib/scss/functions/value';
 
@@ -53,6 +54,7 @@
 @import 'elements/heading';
 @import 'elements/horizontal-rule';
 @import 'elements/image';
+@import 'elements/input';
 @import 'elements/list';
 @import 'elements/svg';
 
