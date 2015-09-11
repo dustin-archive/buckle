@@ -9,6 +9,7 @@ button {
   outline: unset;
   background-color: $white;
   color: $color-first-8;
+  line-height: em($line-height); // Consistent with <input type='button'>
   box-shadow: $border;
 
   &:hover,
@@ -20,9 +21,7 @@ button {
     background-color: remove-alpha($color-first-3, $white);
   }
 
-  @at-root .transparent & {
-    background-color: unset;
-
+  @at-root .transparent & { // MAKE A PLACEHOLDER? ALSO USED IN INPUT
     &:hover,
     &:focus {
       background-color: $color-first-2;
