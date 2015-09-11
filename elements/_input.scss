@@ -5,6 +5,7 @@
 
 input {
   @include padding(x 16, em);
+  height: em(32); // Same height as <button>
   border-radius: em($border-radius);
   outline: unset;
   background-color: $white;
@@ -22,11 +23,22 @@ input {
   &[type='submit'] {
     &:hover,
     &:focus {
-      background-color: $color-first-2;
+      background-color: remove-alpha($color-first-2, $white);
     }
 
     &:active {
-      background-color: $color-first-3;
+      background-color: remove-alpha($color-first-3, $white);
+    }
+
+    @at-root .transparent & { // THIS COULD BE A PLACEHOLDER?? IT'S ALSO USED IN BUTTON
+      &:hover,
+      &:focus {
+        background-color: $color-first-2;
+      }
+
+      &:active {
+        background-color: $color-first-3;
+      }
     }
   }
 
