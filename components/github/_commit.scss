@@ -18,7 +18,7 @@
 }
 
 .commit {
-  @extend %panel;
+  @extend %panel-interactive;
   @include padding(8 16, em);
   display: flex;
 }
@@ -29,7 +29,7 @@
 }
 
 .commit-left {
-  flex: 1;
+  flex: 1; // Pushes .commit-right all the way to the right
 }
 
 .commit-right {
@@ -40,9 +40,21 @@
   }
 }
 
+.commit-information-left {
+  margin-right: em(16);
+}
+
+// .commit-information-right {}
+
 .commit-avatar {
   @include size(48, em);
   @include min-size(48, em);
   border-radius: 50%;
   background-color: $color-first-2;
 }
+
+.commit-title {
+  font-weight: bold;
+}
+
+// .commit-author {}
