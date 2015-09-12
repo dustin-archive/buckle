@@ -43,7 +43,7 @@
 @import 'lib/scss/clearfix';
 @import 'lib/scss/general';
 @import 'lib/scss/placeholders';
-  @import 'lib/scss/panel';
+@import 'lib/scss/panel';
 
 //
 // + Elements
@@ -71,3 +71,9 @@
 // =============================================================================
 
 @import 'components/github/commit';
+
+//
+// + Twitter Components
+// =============================================================================
+
+@import 'components/twitter/feed';
