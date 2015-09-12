@@ -18,9 +18,11 @@ $panel-margin: $line-height / 4; // add to variables theme file?
     margin-top: 0;
   }
 
-  + %panel-group {
-    margin-top: em($panel-margin);
-  }
+  // This messes up when there's two horizontal groups
+  // Disabled for now - find a better way
+  // + %panel-group {
+  //   margin-top: em($panel-margin);
+  // }
 
   @at-root .transparent & {
     background-color: $color-first-1;
@@ -61,12 +63,14 @@ $panel-margin: $line-height / 4; // add to variables theme file?
 %panel-group {
   display: flex;
 
-  & + & {
-    margin-top: em($panel-margin);
-  }
+  // This messes up when there's two horizontal groups
+  // Disabled for now - find a better way
+  // & + & {
+  //   margin-top: em($panel-margin);
+  // }
 
-  %panel,
-  %panel-interactive {
+  > %panel,
+  > %panel-interactive {
     margin: 0;
     border-radius: if($border-radius == null, null, unset);
     flex: 1;
@@ -76,8 +80,8 @@ $panel-margin: $line-height / 4; // add to variables theme file?
 %panel-group-horizontal {
   @extend %panel-group;
 
-  %panel,
-  %panel-interactive {
+  > %panel,
+  > %panel-interactive {
     margin-left: em(-$border-thickness);
 
     &:first-child {
@@ -96,8 +100,8 @@ $panel-margin: $line-height / 4; // add to variables theme file?
   @extend %panel-group;
   flex-direction: column;
 
-  %panel,
-  %panel-interactive {
+  > %panel,
+  > %panel-interactive {
     margin-top: em(-$border-thickness);
 
     &:first-child {
