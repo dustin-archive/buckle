@@ -3,78 +3,16 @@
 // =============================================================================
 
 
-%input-group {
-  @extend %panel-group;
-}
-
-.input-group-horizontal,
 .input-group-vertical {
-  // display: flex;
-  // flex: 1;
-
-  > input,
-  > button {
-    border-radius: unset; // should check to see if needs to be unset?
-    flex: 1;
-  }
-
-  > input {
-    &:hover,
-    &:focus {
-      z-index: 2;
-    }
-  }
-
-  > input[type='button'],
-  > button {
-    &:hover,
-    &:focus {
-      z-index: 1;
-    }
-  }
-
-  > input[type='text'] {
-    &:focus {
-      flex: 4;
-    }
-  }
+  @extend %panel-group-vertical;
 }
 
 .input-group-horizontal {
-  @extend %input-group;
+  @extend %panel-group-horizontal;
 
-  > input,
-  > button {
-    margin-left: em(-$border-thickness);
-
-    &:first-child {
-      @include radius($border-radius x x $border-radius, em);
-      margin-left: 0;
-    }
-
-    &:last-child {
-      @include radius(x $border-radius $border-radius x, em);
-      margin-right: em(-$border-thickness);
-    }
-  }
-}
-
-.input-group-vertical {
-  @extend %input-group;
-  // flex-direction: column;
-
-  > input,
-  > button {
-    margin-top: em(-$border-thickness);
-
-    &:first-child {
-      @include radius($border-radius $border-radius x x, em);
-      margin-top: 0;
-    }
-
-    &:last-child {
-      @include radius(x x $border-radius $border-radius, em);
-      margin-bottom: em(-$border-thickness);
+  input[type='text'] {
+    &:focus {
+      flex: 4;
     }
   }
 }

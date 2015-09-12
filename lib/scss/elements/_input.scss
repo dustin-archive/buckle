@@ -3,52 +3,17 @@
 // =============================================================================
 
 
+button,
 input {
-  @include padding(x 16, em);
-  height: em(32); // Same height as <button>
-  border-radius: em($border-radius);
+  @include padding(4 x, em);
   outline: unset;
-  background-color: $white;
-  color: $color-first-8;
-  box-shadow: $border;
+}
 
-  &[type='text'] {
-    &:focus {
-      box-shadow: inset 0 0 0 em($border-thickness) remove-alpha($border-color, $color-first-3);
-    }
-  }
+button {
+  @extend %panel-interactive;
+}
 
-  // Buttons
-  &[type='button'],
-  &[type='submit'] {
-    &:hover,
-    &:focus {
-      background-color: remove-alpha($color-first-2, $white);
-    }
-
-    &:active {
-      background-color: remove-alpha($color-first-3, $white);
-    }
-
-    @at-root .transparent & { // THIS COULD BE A PLACEHOLDER?? IT'S ALSO USED IN BUTTON
-      background-color: unset;
-
-      &:hover,
-      &:focus {
-        background-color: $color-first-2;
-      }
-
-      &:active {
-        background-color: $color-first-3;
-      }
-    }
-  }
-
-  @at-root .transparent & {
-    background-color: unset;
-
-    &:focus {
-      box-shadow: inset 0 0 0 em($border-thickness) layer-colors($border-color, $color-first-2);
-    }
-  }
+input {
+  @extend %panel-interactive;
+  line-height: em($line-height); // Consistent with <button>
 }
