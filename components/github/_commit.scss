@@ -9,6 +9,12 @@
 
 .commit-group-horizontal {
   @extend %panel-group-horizontal;
+
+  button {
+    // I'm not sure if this is good or bad.
+    // Should button groups always make buttons flex?
+    flex: none;
+  }
 }
 
 .commit {
@@ -19,7 +25,7 @@
 
 .commit-left,
 .commit-right {
-  display: flex;
+  display: flex; // Allows multiple commit-group-horizontal to be side by side
 }
 
 .commit-left {
@@ -29,7 +35,7 @@
 .commit-right {
   @include padding(8 x, em);
 
-  .commit-group-horizontal {
+  .commit-group-horizontal:first-child {
     margin-right: em(16);
   }
 }
