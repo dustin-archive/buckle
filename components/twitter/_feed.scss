@@ -31,13 +31,17 @@
   padding: em(16);
   z-index: 2;
 
-  textarea {
+  textarea { // this should be in it's own element
     @extend %panel;
     @include padding(4 x, em);
     width: 100%;
     height: em(32);
     outline: none;
     resize: none;
+
+    &::-webkit-input-placeholder {
+      color: $color-first-4;
+    }
 
     &:focus {
       height: em(64);
@@ -53,7 +57,6 @@
 //
 // + Tweet
 // =============================================================================
-
 
 .tweet {
   @extend %panel-interactive;
