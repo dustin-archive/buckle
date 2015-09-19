@@ -8,12 +8,12 @@
 }
 
 .feed-group-horizontal {
-  @extend %panel-group-horizontal;
+  // @extend %panel-group-horizontal;
 
   button {
     // I'm not sure if this is good or bad.
     // Should button groups always make buttons flex?
-    flex: none;
+    // flex: none;
   }
 }
 
@@ -21,22 +21,35 @@
 // + Tweet box
 // =============================================================================
 
+.tweet-box-group {
+  @extend %panel-group-vertical;
+}
+
 .tweet-box {
   @extend %panel;
   display: flex;
   padding: em(16);
   background-color: rgba(dodgerblue, .25) !important; // Why important?
+  z-index: 1;
 
   textarea {
     @extend %panel;
+    @include padding(4 x, em);
     width: 100%;
-    height: em(72);
+    height: em(32);
+    outline: none;
     resize: none;
+
+    &:focus {
+      height: em(64);
+    }
   }
 }
 
 .tweet-toolbar {
-  @extend %panel;
+  @extend %panel-group-horizontal;
+  @extend %panel-group-vertical-bottom;
+  // @extend %panel;
 }
 
 //
@@ -59,7 +72,7 @@
 }
 
 .tweet-avatar {
-  @include size(72, em);
+  @include size(64, em);
   @include min-size(48, em);
   border-radius: 50%;
   background-color: $color-first-1;

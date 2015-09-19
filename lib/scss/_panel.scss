@@ -91,7 +91,6 @@ $panel-margin: $line-height / 4; // add to variables theme file?
 
     &:last-child {
       @include radius(x $border-radius $border-radius x, em);
-      // margin-right: em(-$border-thickness); // only needed for flex items? - this is a flex item you dummy. why was this a thing ever?
     }
   }
 }
@@ -111,7 +110,27 @@ $panel-margin: $line-height / 4; // add to variables theme file?
 
     &:last-child {
       @include radius(x x $border-radius $border-radius, em);
-      // margin-bottom: em(-$border-thickness); // only needed for flex items? - this is a flex item you dummy. why was this a thing ever?
+    }
+  }
+}
+
+%panel-group-horizontal-top {}
+
+%panel-group-horizontal-bottom {}
+
+%panel-group-vertical-top {}
+
+%panel-group-vertical-bottom {
+  margin-top: em(-$border-thickness);
+
+  > %panel,
+  > %panel-interactive {
+    &:first-child {
+      @include radius(0 x x x);
+    }
+
+    &:last-child {
+      @include radius(x 0 x x);
     }
   }
 }
