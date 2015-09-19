@@ -27,9 +27,9 @@
 .grid-list { @include grid(2); }
 .column-list { @include column(6); }
 
-// Input
-.grid-input { @include grid(3); }
-.column-input { @include column(4); }
+// Form
+.grid-form { @include grid(3); }
+.column-form { @include column(4); }
 
 // Input
 .grid-panel { @include grid(2); }
