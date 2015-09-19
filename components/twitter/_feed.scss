@@ -77,10 +77,9 @@
   @include min-size(48, em);
   border-radius: 50%;
   background-color: $color-first-1;
-  box-shadow: $border;
-
-  background-image: url(../../avatar.png);
+  background-image: url('../../avatar.png');
   background-size: cover;
+  box-shadow: $border;
 }
 
 .tweet-author {
