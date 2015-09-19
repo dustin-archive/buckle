@@ -1,13 +1,13 @@
 //
-// + Input group
+// + Form group
 // =============================================================================
 
 
-.input-group-vertical {
+.form-group-vertical {
   @extend %panel-group-vertical;
 }
 
-.input-group-horizontal {
+.form-group-horizontal {
   @extend %panel-group-horizontal;
 
   input[type='text'] {
