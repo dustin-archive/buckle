@@ -133,10 +133,10 @@ $panel-margin: $line-height / 4; // add to variables theme file?
 // Test classes
 .panel {
   @extend %panel;
+}
 
-  &.interactive {
-    @extend %panel-interactive;
-  }
+.panel-interactive {
+  @extend %panel-interactive;
 }
 
 .panel-group-horizontal {
