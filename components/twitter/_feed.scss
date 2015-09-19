@@ -2,19 +2,8 @@
 // + Feed
 // =============================================================================
 
-
 .feed-group-vertical {
   @extend %panel-group-vertical;
-}
-
-.feed-group-horizontal {
-  // @extend %panel-group-horizontal;
-
-  button {
-    // I'm not sure if this is good or bad.
-    // Should button groups always make buttons flex?
-    // flex: none;
-  }
 }
 
 //
