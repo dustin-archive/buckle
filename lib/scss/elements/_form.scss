@@ -1,0 +1,37 @@
+//
+// + Form
+// =============================================================================
+
+
+%form-element {
+  @include padding(4 x, em);
+  outline: unset;
+}
+
+button {
+  @extend %panel-interactive;
+  @extend %form-element;
+}
+
+input {
+  @extend %panel-interactive;
+  @extend %form-element;
+  line-height: em($line-height); // Consistent with <button>
+}
+
+textarea {
+  @extend %panel-interactive;
+  @extend %form-element;
+  resize: unset;
+
+  &::-webkit-input-placeholder {
+    color: $color-first-4;
+  }
+
+  // width: 100%;
+  // height: em(32);
+
+  // &:focus {
+  //   height: em(64);
+  // }
+}
