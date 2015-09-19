@@ -29,8 +29,7 @@
   @extend %panel;
   display: flex;
   padding: em(16);
-  background-color: rgba(dodgerblue, .25) !important; // Why important?
-  z-index: 1;
+  z-index: 2;
 
   textarea {
     @extend %panel;
@@ -49,7 +48,6 @@
 .tweet-toolbar {
   @extend %panel-group-horizontal;
   @extend %panel-group-vertical-bottom;
-  // @extend %panel;
 }
 
 //
@@ -72,7 +70,7 @@
 }
 
 .tweet-avatar {
-  @include size(64, em);
+  @include size(62, em);
   @include min-size(48, em);
   border-radius: 50%;
   background-color: $color-first-1;
