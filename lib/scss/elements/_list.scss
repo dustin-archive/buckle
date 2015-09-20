@@ -5,29 +5,30 @@
 
 ul,
 ol {
-  @include margin(($line-height / 4) x x ($line-height / 2), em);
+  @include margin($font-size x x $line-height, em);
   list-style-position: inside;
 
   ul,
   ol {
-    margin-top: unset;
+    @include margin(unset x x $line-height, em);
   }
 
   &.unstyled {
+    margin-left: em($line-height);
     list-style: none;
   }
 }
 
-// Right align items 1-9 with 10-99
-// From item 99 onwards the list will be offset
-// May be inaccurate with other fonts or systems
-// May be removed in the future
-ol.right li:nth-child(-n+9) {
-  margin-left: em(9);
-}
+ol.right {
+  margin-left: em($line-height * 2);
+  list-style-position: unset;
 
-// Distance between the text and the bullet
-li::before {
-  padding-left: em($line-height / 4);
-  content: '';
+  ul,
+  ol {
+    margin-left: unset;
+  }
+
+  ol.right {
+    margin-left: em($line-height);
+  }
 }

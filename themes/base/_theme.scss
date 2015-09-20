@@ -24,8 +24,8 @@
 .column-horizontal-rule { @include column(6); }
 
 // List
-.grid-list { @include grid(2); }
-.column-list { @include column(6); }
+.grid-list { @include grid(4); }
+.column-list { @include column(3); }
 
 // Form
 .grid-form { @include grid(3); }
