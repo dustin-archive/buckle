@@ -10,7 +10,7 @@ ol {
 
   ul,
   ol {
-    @include margin(unset x x $line-height, em);
+    margin-top: unset;
   }
 
   &.unstyled {
