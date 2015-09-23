@@ -40,7 +40,7 @@
   margin-top: em(8);
 
   button {
-    &::before {
+    &::before { // placeholder?
       padding-right: em(8);
       font-family: FontAwesome;
     }
@@ -72,6 +72,25 @@
   display: flex;
   padding: em(16);
   z-index: 2;
+
+  button {
+    &::before {
+      padding-right: em(8);
+      font-family: FontAwesome;
+    }
+
+    &.camera::before {
+      content: $fa-var-camera;
+    }
+
+    &.location::before {
+      content: $fa-var-map-marker;
+    }
+
+    &.post::before {
+      content: $fa-var-twitter;
+    }
+  }
 
   textarea {
     height: em(32);
