@@ -3,9 +3,13 @@
 // =============================================================================
 
 
-.wrapper:nth-child(odd) {
+body {
   background-color: $color-first-1;
 }
+
+// .wrapper:nth-child(odd) {
+//   background-color: $color-first-1;
+// }
 
 // Headings
 .grid-heading { @include grid(3); }
