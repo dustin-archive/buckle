@@ -6,6 +6,8 @@
 %form-element {
   @include padding(4 x, em);
   outline: unset;
+
+  transition: all .25s; // variable?
 }
 
 button {
