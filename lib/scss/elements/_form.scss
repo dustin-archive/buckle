@@ -15,18 +15,11 @@ button {
 }
 
 input {
-  // @extend %panel;
   @extend %form-element;
   line-height: em($line-height); // Consistent with <button>
 
   &[type='text'] {
     @extend %panel-interactive-border;
-
-    // Should this be %panel-interactive-border?
-    // &:hover,
-    // &:focus {
-    //   box-shadow: inset 0 0 0 em($border-thickness) layer-colors($border-color, $color-first-2);
-    // }
   }
 
   &[type='button'] {
@@ -35,18 +28,11 @@ input {
 }
 
 textarea {
-  @extend %panel-interactive;
+  @extend %panel-interactive-border;
   @extend %form-element;
   resize: unset;
 
   &::-webkit-input-placeholder {
     color: $color-first-4;
   }
-
-  // width: 100%;
-  // height: em(32);
-
-  // &:focus {
-  //   height: em(64);
-  // }
 }
