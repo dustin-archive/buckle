@@ -1,0 +1,64 @@
+//
+// + Group direction
+// =============================================================================
+
+
+%panel-group-horizontal {
+  @extend %panel-group;
+
+  > %panel,
+  > %panel-interactive {
+    margin-left: em(-$border-thickness);
+
+    &:first-child {
+      @include radius($border-radius x x $border-radius, em);
+      margin-left: 0;
+    }
+
+    &:last-child {
+      @include radius(x $border-radius $border-radius x, em);
+    }
+  }
+}
+
+%panel-group-vertical {
+  @extend %panel-group;
+  flex-direction: column;
+
+  > %panel,
+  > %panel-interactive {
+    margin-top: em(-$border-thickness);
+
+    &:first-child {
+      @include radius($border-radius $border-radius x x, em);
+      margin-top: 0;
+    }
+
+    &:last-child {
+      @include radius(x x $border-radius $border-radius, em);
+    }
+  }
+}
+
+// Split into new file?
+
+%panel-group-horizontal-top {}
+
+%panel-group-horizontal-bottom {}
+
+%panel-group-vertical-top {}
+
+%panel-group-vertical-bottom {
+  margin-top: em(-$border-thickness);
+
+  > %panel,
+  > %panel-interactive {
+    &:first-child {
+      @include radius(0 x x x);
+    }
+
+    &:last-child {
+      @include radius(x 0 x x);
+    }
+  }
+}

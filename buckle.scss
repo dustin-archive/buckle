@@ -43,7 +43,12 @@
 @import 'lib/scss/clearfix';
 @import 'lib/scss/general';
 @import 'lib/scss/placeholders';
-@import 'lib/scss/panel';
+
+@import 'lib/scss/panel/panel';
+@import 'lib/scss/panel/panel-interactive';
+@import 'lib/scss/panel/group';
+@import 'lib/scss/panel/group-direction';
+@import 'lib/scss/panel/test';
 
 //
 // + Elements

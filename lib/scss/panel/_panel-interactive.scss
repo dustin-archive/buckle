@@ -1,0 +1,30 @@
+//
+// + Panel interactive
+// =============================================================================
+
+
+%panel-interactive {
+  @extend %panel;
+  z-index: 1; // So borders transition properly when z-index changes
+
+  &:hover,
+  &:focus {
+    background-color: remove-alpha($color-first-2, $white);
+    z-index: 2;
+  }
+
+  &:active {
+    background-color: remove-alpha($color-first-3, $white);
+  }
+
+  @at-root .transparent & {
+    &:hover,
+    &:focus {
+      background-color: $color-first-2;
+    }
+
+    &:active {
+      background-color: $color-first-3;
+    }
+  }
+}

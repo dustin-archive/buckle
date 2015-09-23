@@ -1,0 +1,29 @@
+//
+// + Panel
+// =============================================================================
+
+
+$panel-margin: $line-height / 4; // add to variables theme file?
+
+%panel {
+  @include padding(x 16, em);
+  margin-top: em($panel-margin);
+  border-radius: em($border-radius);
+  background-color: $white;
+  color: $color-first-8;
+  box-shadow: $border;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  // This messes up when there's two horizontal groups
+  // Disabled for now - find a better way
+  // + %panel-group {
+  //   margin-top: em($panel-margin);
+  // }
+
+  @at-root .transparent & {
+    background-color: $color-first-1;
+  }
+}

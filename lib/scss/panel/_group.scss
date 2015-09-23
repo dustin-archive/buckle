@@ -1,0 +1,21 @@
+//
+// + Group
+// =============================================================================
+
+
+%panel-group {
+  display: flex;
+
+  // This messes up when there's two horizontal groups
+  // Disabled for now - find a better way
+  // & + & {
+  //   margin-top: em($panel-margin);
+  // }
+
+  > %panel,
+  > %panel-interactive {
+    border-radius: if($border-radius == null, null, unset);
+    flex: 1;
+    margin: 0;
+  }
+}
