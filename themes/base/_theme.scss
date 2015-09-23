@@ -36,13 +36,13 @@ body {
 .column-form { @include column(4); }
 
 // Input
-.grid-panel { @include grid(2); }
-.column-panel { @include column(6); }
+.grid-panel { @include grid(4); }
+.column-panel { @include column(3); }
 
 // Twitter
-.grid-twitter { @include grid(3); }
-.column-twitter { @include column(4); }
+.grid-twitter { @include grid(2); }
+.column-twitter { @include column(6); }
 
 // Github
-.grid-github { @include grid(3); }
-.column-github { @include column(4); }
+.grid-github { @include grid(2); }
+.column-github { @include column(6); }
