@@ -3,7 +3,9 @@
 // =============================================================================
 
 
-%panel-zindex {
+%panel-interactive-common { // better name?
+  @extend %panel;
+  transition: all .25s; // variable?
   z-index: 1; // So borders transition properly when z-index changes
 
   &:hover,
@@ -13,16 +15,15 @@
 }
 
 %panel-interactive {
-  @extend %panel;
-  @extend %panel-zindex;
+  @extend %panel-interactive-common;
 
   &:hover,
   &:focus {
-    background-color: remove-alpha($color-first-2, $white);
+    background-color: remove-alpha($color-first-2, $white); // variable?
   }
 
   &:active {
-    background-color: remove-alpha($color-first-3, $white);
+    background-color: remove-alpha($color-first-3, $white); // variable?
   }
 
   @at-root .transparent & {
@@ -38,15 +39,14 @@
 }
 
 %panel-interactive-border {
-  @extend %panel;
-  @extend %panel-zindex;
+  @extend %panel-interactive-common;
 
   &:hover,
   &:focus {
-    box-shadow: inset 0 0 0 em($border-thickness) layer-colors($border-color, $color-first-2);
+    box-shadow: inset 0 0 0 em($border-thickness) layer-colors($border-color, $color-first-2); // variable?
   }
 
   &:active {
-    box-shadow: inset 0 0 0 em($border-thickness) layer-colors($border-color, $color-first-3);
+    box-shadow: inset 0 0 0 em($border-thickness) layer-colors($border-color, $color-first-3); // variable?
   }
 }
