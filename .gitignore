@@ -7,8 +7,11 @@ config.codekit
 
 node_modules
 bower_components
+
+examples
 dist
 index.html
+
 _snippets
 
 gulpfile.coffee
