@@ -12,9 +12,15 @@ $panel-margin: $line-height / 4; // add to variables theme file?
   background-color: $white;
   color: $color-first-8;
   box-shadow: $border;
+  z-index: 1; // So borders transition properly when z-index changes
 
   &:first-child {
     margin-top: 0;
+  }
+
+  &:hover,
+  &:focus {
+    z-index: 2;
   }
 
   // This messes up when there's two horizontal groups

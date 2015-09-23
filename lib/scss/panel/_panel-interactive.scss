@@ -5,12 +5,10 @@
 
 %panel-interactive {
   @extend %panel;
-  z-index: 1; // So borders transition properly when z-index changes
 
   &:hover,
   &:focus {
     background-color: remove-alpha($color-first-2, $white);
-    z-index: 2;
   }
 
   &:active {
