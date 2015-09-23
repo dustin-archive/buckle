@@ -13,7 +13,11 @@ html(lang='en-us')
     link(href='dist/css/buckle.css', rel='stylesheet', type='text/css')
 
   body
-    include examples/menu.jade
+
+    //- Imports
+    include lib/buckle.jade
+
+    //- include examples/menu.jades
 
     #page.page
       include examples/header.jade
@@ -35,6 +39,11 @@ html(lang='en-us')
       include examples/horizontal-rule.jade
       include examples/list.jade
       include examples/button.jade
+
+      //- test stuff
+
+      +section
+        +button('Hello world')
 
     //- Bower
     script(src='bower_components/jquery/dist/jquery.min.js')
