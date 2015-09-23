@@ -25,13 +25,7 @@
 }
 
 .tweet-avatar {
-  @include size(62, em);
-  @include min-size(48, em);
-  border-radius: 50%;
-  background-color: $color-first-1;
-  background-image: url('../../avatar.png');
-  background-size: cover;
-  box-shadow: $border;
+  @extend %avatar;
 }
 
 .tweet-author {

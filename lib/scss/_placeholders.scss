@@ -19,3 +19,13 @@
   @extend %highlight;
   box-shadow: $border;
 }
+
+
+
+%avatar {
+  @include size(62, em);
+  background-color: $color-first-1;
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: $border;
+}

@@ -47,10 +47,8 @@
 // .commit-information-right {}
 
 .commit-avatar {
+  @extend %avatar;
   @include size(48, em);
-  @include min-size(48, em);
-  border-radius: 50%;
-  background-color: $color-first-2;
 }
 
 .commit-title {
