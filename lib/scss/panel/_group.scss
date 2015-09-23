@@ -6,8 +6,12 @@
 %panel-group {
   display: flex;
 
-  > %panel,
-  > %panel-interactive {
+  // this isn't nessecary??
+  // > %panel,
+  // > %panel-interactive,
+  // > %panel-interactive-border {
+
+  > %panel {
     margin: 0;
     border-radius: if($border-radius == null, null, unset);
     flex: 1;
