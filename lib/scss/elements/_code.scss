@@ -5,14 +5,14 @@
 
 samp,
 code {
-  @extend %highlight;
+  @extend %panel-style;
   @include padding(($line-height / 8) ($line-height / 4), em);
   font-family: $font-monospace;
   box-shadow: $border-top;
 }
 
 kbd {
-  @extend %highlight;
+  @extend %panel-style;
   @include padding(($line-height / 8) ($line-height / 4), em);
   @include margin(x ($line-height / 8), em);
   font-family: $font-monospace;
@@ -20,7 +20,7 @@ kbd {
 }
 
 pre {
-  @extend %block;
+  @extend %panel;
   @include padding(($line-height / 2) $line-height, em);
   margin-top: em($line-height / 2);
   font-family: $font-monospace;

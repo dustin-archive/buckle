@@ -5,22 +5,20 @@
 
 $panel-margin: $line-height / 4; // add to variables theme file?
 
-%panel {
-  @include padding(x 16, em);
-  margin-top: em($panel-margin);
+%panel-style {
   border-radius: em($border-radius);
   background-color: $white;
   color: $color-first-8;
   box-shadow: $border;
-  z-index: 1; // So borders transition properly when z-index changes
+}
+
+%panel {
+  @extend %panel-style;
+  @include padding(x 16, em);
+  margin-top: em($panel-margin);
 
   &:first-child {
     margin-top: 0;
-  }
-
-  &:hover,
-  &:focus {
-    z-index: 2;
   }
 
   // This messes up when there's two horizontal groups

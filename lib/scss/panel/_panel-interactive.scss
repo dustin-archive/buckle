@@ -3,8 +3,18 @@
 // =============================================================================
 
 
+%panel-zindex {
+  z-index: 1; // So borders transition properly when z-index changes
+
+  &:hover,
+  &:focus {
+    z-index: 2;
+  }
+}
+
 %panel-interactive {
   @extend %panel;
+  @extend %panel-zindex;
 
   &:hover,
   &:focus {
@@ -24,5 +34,19 @@
     &:active {
       background-color: $color-first-3;
     }
+  }
+}
+
+%panel-interactive-border {
+  @extend %panel;
+  @extend %panel-zindex;
+
+  &:hover,
+  &:focus {
+    box-shadow: inset 0 0 0 em($border-thickness) layer-colors($border-color, $color-first-2);
+  }
+
+  &:active {
+    box-shadow: inset 0 0 0 em($border-thickness) layer-colors($border-color, $color-first-3);
   }
 }
