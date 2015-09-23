@@ -34,6 +34,31 @@
 
 // .tweet-tweet {}
 
+.tweet-toolbar {
+  @extend %panel-group-horizontal;
+  // display: none; // hidden by default?
+  margin-top: em(8);
+
+  button {
+    &::before {
+      padding-right: em(8);
+      font-family: FontAwesome;
+    }
+
+    &.reply::before {
+      content: $fa-var-reply;
+    }
+
+    &.retweet::before {
+      content: $fa-var-retweet;
+    }
+
+    &.favorite::before {
+      content: $fa-var-star;
+    }
+  }
+}
+
 //
 // + Tweet box
 // =============================================================================
