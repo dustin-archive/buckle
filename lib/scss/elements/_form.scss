@@ -5,7 +5,6 @@
 
 %form-element {
   @include padding(4 x, em);
-  transition: all .25s; // variable?
   outline: unset;
 }
 
