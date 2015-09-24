@@ -6,14 +6,67 @@
 %panel-group {
   display: flex;
 
-  // this isn't nessecary??
-  // > %panel,
-  // > %panel-interactive,
-  // > %panel-interactive-border {
-
   > %panel {
     margin: 0;
-    border-radius: if($border-radius == null, null, unset);
+    border-radius: if($border-radius, 0, null);
     flex: 1;
+  }
+}
+
+%panel-group-horizontal {
+  @extend %panel-group;
+
+  > %panel {
+    margin-left: em(-$border-thickness);
+
+    &:first-child {
+      @include radius($border-radius x x $border-radius, em);
+      margin-left: 0;
+    }
+
+    &:last-child {
+      @include radius(x $border-radius $border-radius x, em);
+    }
+  }
+}
+
+%panel-group-vertical {
+  @extend %panel-group;
+  flex-direction: column;
+
+  > %panel {
+    margin-top: em(-$border-thickness);
+
+    &:first-child {
+      @include radius($border-radius $border-radius x x, em);
+      margin-top: 0;
+    }
+
+    &:last-child {
+      @include radius(x x $border-radius $border-radius, em);
+    }
+  }
+}
+
+// Split into new file?
+
+// %panel-group-horizontal-top {}
+
+// %panel-group-horizontal-bottom {}
+
+// %panel-group-vertical-top {}
+
+%panel-group-vertical-bottom {
+  margin-top: em(-$border-thickness);
+
+  > %panel,
+  > %panel-interactive {
+    &:first-child {
+      @include radius(0 x x x);
+    }
+
+    &:last-child {
+      @include radius(x 0 x x);
+    }
   }
 }
