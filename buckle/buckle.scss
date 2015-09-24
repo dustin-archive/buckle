@@ -13,18 +13,18 @@
 @import 'framework/scss/functions/remove-alpha';
 @import 'framework/scss/functions/value';
 
-// Mixins
-@import 'framework/scss/mixins/lifesaver/main';
-
-// Requires lifesaver
-@import 'framework/scss/mixins/flex-align';
-@import 'framework/scss/mixins/icons';
-@import 'framework/scss/mixins/line';
-@import 'framework/scss/mixins/transition';
+// LifeSaver
+@import 'framework/scss/lifesaver/main';
 
 // Grid
 // re-organize this??
 @import 'framework/scss/grid/main';
+
+// Mixins
+@import 'framework/scss/mixins/flex-align';
+@import 'framework/scss/mixins/icons';
+@import 'framework/scss/mixins/line';
+@import 'framework/scss/mixins/transition';
 
 // Themes
 @import 'themes/base/variables';
