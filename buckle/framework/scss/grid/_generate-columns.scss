@@ -11,18 +11,12 @@
   $column-media         : null
   ) {
 
-  //
-  // + Columns
-  // ===========================================================================
-
+  // Columns
   $column-name: if(is-null($column-name), $column-name, $column-name + '-');
 
   @for $i from 1 through ($column-amount - 1) {
 
-    //
-    // + Column width
-    // =========================================================================
-
+    // Column width
     $column-divisor: $column-amount / $i;
     $column-gutter-width-total: $column-gutter-width * ($column-divisor - 1);
 
@@ -38,10 +32,7 @@
       $offset-margin: calc((100% / #{$column-divisor}) + #{em($column-gutter-width)});
     }
 
-    //
-    // + Columns and offsets
-    // =========================================================================
-
+    // Columns and offsets
     %column-#{$column-name}#{$i}#{$column-media} {
       flex: 1 1 $column-width;
     }
@@ -55,10 +46,7 @@
     }
   }
 
-  //
-  // + Largest column and offset
-  // ===========================================================================
-
+  // Largest column and offset
   %column-#{$column-name}#{$column-amount}#{$column-media} {
     flex: 1 1 100%;
   }
@@ -71,10 +59,7 @@
     margin-right: 100%;
   }
 
-  //
-  // + Zero column and offset
-  // ===========================================================================
-
+  // Zero column and offset
   %column-#{$column-name}0#{$column-media} {
     flex: 1 1 0;
   }
@@ -88,8 +73,5 @@
   }
 }
 
-//
-// + Generate default columns
-// =============================================================================
-
+// Generate default columns
 @include generate-columns();

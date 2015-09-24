@@ -10,10 +10,7 @@ $breakpoints: ();
   $column-amount : $column-amount
   ) {
 
-  //
-  // + Breakpoints
-  // ===========================================================================
-
+  // Breakpoints
   @for $i from 1 through $column-amount {
     $breakpoint-name: if(is-null($column-name), $i, $column-name + '-' + $i);
 
@@ -28,16 +25,10 @@ $breakpoints: ();
   }
 }
 
-//
-// + Generate default breakpoints
-// =============================================================================
-
+// Generate default breakpoints
 @include generate-breakpoints;
 
-//
-// + Breakpoint mixin
-// =============================================================================
-
+// Breakpoint mixin
 @mixin breakpoint($breakpoint) {
   $media-width: map-get($breakpoints, $breakpoint);
 

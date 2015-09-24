@@ -10,10 +10,7 @@
   $column-media         : null
   ) {
 
-  //
-  // + Grid placeholders
-  // ===========================================================================
-
+  // Grid placeholders
   @if is-null($column-media) {
     %grid-all-children {
       @include margin($column-gutter-height $column-gutter-width x x, em);
@@ -41,18 +38,12 @@
     }
   }
 
-  //
-  // + Grids
-  // ===========================================================================
-
+  // Grids
   @for $i from 1 through $column-amount {
     %grid-#{$i}#{$column-media} {
       > [class^='column-'] {
 
-        //
-        // + Nth-child
-        // =====================================================================
-
+        // Nth-child
         &:nth-child(n) {
           @if is-null($column-media) {
             @extend %grid-all-children;
@@ -62,10 +53,7 @@
           }
         }
 
-        //
-        // + First row
-        // =====================================================================
-
+        // First row
         &:nth-child(-n + #{$i}) {
           @if is-null($column-media) {
             @extend %grid-first-row;
@@ -75,10 +63,7 @@
           }
         }
 
-        //
-        // + Last column and last child
-        // =====================================================================
-
+        // Last column and last child
         &:nth-child(#{$i}n),
         &:last-child {
           @if is-null($column-media) {
@@ -93,8 +78,5 @@
   }
 }
 
-//
-// + Generate default grids
-// =============================================================================
-
+// Generate default grids
 @include generate-grids;
