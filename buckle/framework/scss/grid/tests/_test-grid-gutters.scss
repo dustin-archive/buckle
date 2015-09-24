@@ -14,11 +14,11 @@
   }
 
   > [class^='column-']:nth-child(-n + 1) {
-    margin-top: unset;
+    margin-top: 0;
   }
 
   > [class^='column-']:nth-child(1n),
   > [class^='column-']:last-child {
-    margin-right: unset;
+    margin-right: 0;
   }
 }
