@@ -8,13 +8,16 @@ body {
 }
 
 .center {
-  width: 100%;
+  // width: 100%; // i'm not sure if i could use flex or auto for centering
+  // margin: auto;
   max-width: em($page-max);
-  margin: auto;
+  flex: 1;
 }
 
 .wrapper {
+  display: flex;
   padding: em($gutter-width);
+  justify-content: center;
 }
 
 [class^='grid-'] {
