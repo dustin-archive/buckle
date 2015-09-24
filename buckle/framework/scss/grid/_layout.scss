@@ -14,7 +14,7 @@ body {
 }
 
 .wrapper {
-  @include padding($gutter-width, em);
+  padding: em($gutter-width);
 }
 
 [class^='grid-'] {
