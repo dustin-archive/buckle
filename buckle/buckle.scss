@@ -17,8 +17,7 @@
 @import 'framework/scss/lifesaver/main';
 
 // Grid
-// re-organize this??
-@import 'framework/scss/grid/main';
+@import 'framework/scss/grid/main'; // re-organize this??
 
 // Mixins
 @import 'framework/scss/mixins/flex-align';
@@ -56,6 +55,7 @@
 
 // Components
 @import 'components/form-group/form-group';
+@import 'components/jumbo/jumbo';
 
 // Requires icons
 @import 'components/menu/menu';
