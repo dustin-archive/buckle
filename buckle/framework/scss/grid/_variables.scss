@@ -3,10 +3,10 @@
 // =============================================================================
 
 
-$column-amount: 12;
+$column-amount: 12 !default;
 
-$gutter-width: 32;
-$gutter-height: 16;
+$gutter-width: 32 !default;
+$gutter-height: 16 !default;
 
-$page-max: 1280;
-$page-min: 320;
+$page-max: 1280 !default;
+$page-min: 320 !default;
