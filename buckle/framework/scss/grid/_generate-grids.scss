@@ -20,7 +20,7 @@
       margin-top: 0;
     }
 
-    %grid-margin-right-unset {
+    %grid-margin-right-zero {
       margin-right: 0;
     }
   }
@@ -33,7 +33,7 @@
       margin-top: 0;
     }
 
-    %grid-margin-right-unset#{$column-media} {
+    %grid-margin-right-zero#{$column-media} {
       margin-right: 0;
     }
   }
@@ -67,10 +67,10 @@
         &:nth-child(#{$i}n),
         &:last-child {
           @if is-null($column-media) {
-            @extend %grid-margin-right-unset;
+            @extend %grid-margin-right-zero;
           }
           @else {
-            @extend %grid-margin-right-unset#{$column-media};
+            @extend %grid-margin-right-zero#{$column-media};
           }
         }
       }
