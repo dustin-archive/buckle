@@ -20,11 +20,11 @@
     }
 
     %grid-first-row {
-      margin-top: unset;
+      margin-top: 0;
     }
 
     %grid-margin-right-unset {
-      margin-right: unset;
+      margin-right: 0;
     }
   }
   @else {
@@ -33,11 +33,11 @@
     }
 
     %grid-first-row#{$column-media} {
-      margin-top: unset;
+      margin-top: 0;
     }
 
     %grid-margin-right-unset#{$column-media} {
-      margin-right: unset;
+      margin-right: 0;
     }
   }
 

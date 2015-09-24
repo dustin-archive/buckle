@@ -80,11 +80,11 @@
   }
 
   %offset-#{$column-name}left-0#{$column-media} {
-    margin-left: unset;
+    margin-left: 0;
   }
 
   %offset-#{$column-name}right-0#{$column-media} {
-    margin-right: unset;
+    margin-right: 0;
   }
 }
 
