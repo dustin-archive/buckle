@@ -23,5 +23,5 @@ body {
 [class^='grid-'] {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: if($product-grid == true, flex-start, space-between);
 }

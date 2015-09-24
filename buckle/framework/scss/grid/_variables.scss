@@ -10,3 +10,5 @@ $gutter-height: 16 !default;
 
 $page-max: 1280 !default;
 $page-min: 320 !default;
+
+$product-grid: false !default; // should be configurable within generate-columns also
