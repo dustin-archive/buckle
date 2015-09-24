@@ -15,10 +15,12 @@
 
 // Mixins
 @import 'framework/scss/mixins/lifesaver/main';
-@import 'framework/scss/mixins/flex-align';     // Requires: lifesaver (is-null)
-@import 'framework/scss/mixins/icons';          // Requires: lifesaver
-@import 'framework/scss/mixins/line';           // Requires: lifesaver
-@import 'framework/scss/mixins/transition';     // Requires: lifesaver (is-null)
+
+// Requires lifesaver
+@import 'framework/scss/mixins/flex-align';
+@import 'framework/scss/mixins/icons';
+@import 'framework/scss/mixins/line';
+@import 'framework/scss/mixins/transition';
 
 // Grid
 // re-organize this??
@@ -54,7 +56,9 @@
 
 // Components
 @import 'components/form-group/form-group';
-@import 'components/menu/menu';                               // Requires: icons
+
+// Requires icons
+@import 'components/menu/menu';
 
 @import 'components/github/commit';
 @import 'components/twitter/feed';
