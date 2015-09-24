@@ -21,7 +21,7 @@ ol {
 
 ol.right {
   margin-left: em($line-height * 2);
-  list-style-position: outside;
+  list-style-position: initial;
 
   ul,
   ol {
