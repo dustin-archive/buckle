@@ -28,8 +28,8 @@ body {
 .column-list { @include column(3); }
 
 // Form
-.grid-form { @include grid(3); }
-.column-form { @include column(4); }
+.grid-form { @include grid(6); }
+.column-form { @include column(2); }
 
 // Input
 .grid-panel { @include grid(4); }
