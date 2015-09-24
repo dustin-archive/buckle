@@ -5,7 +5,7 @@
 
 %heading {
   @extend %block-margin-top;
-  margin-bottom: unset; // Normalize override
+  margin-bottom: 0; // Normalize override
   font-family: $font-headings;
   font-weight: normal;
   line-height: 1;

@@ -5,7 +5,7 @@
 
 %form-element {
   @include padding(4 x, em);
-  outline: unset;
+  outline: none;
 }
 
 button {
@@ -29,7 +29,7 @@ input {
 textarea {
   @extend %panel-interactive-border;
   @extend %form-element;
-  resize: unset;
+  resize: none;
 
   &::-webkit-input-placeholder {
     color: $color-first-4;

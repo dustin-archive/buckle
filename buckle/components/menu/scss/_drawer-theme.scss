@@ -9,8 +9,8 @@
 
   @at-root .menu-dropdown & {
     @include breakpoint(6) {
-      background-color: unset;
-      box-shadow: unset;
+      background-color: transparent;
+      box-shadow: none;
     }
   }
 
@@ -31,7 +31,7 @@
 
       @at-root .menu-dropdown & {
         @include breakpoint(6) {
-          border-radius: unset;
+          border-radius: 0;
         }
       }
     }
