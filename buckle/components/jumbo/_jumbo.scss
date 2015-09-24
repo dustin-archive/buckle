@@ -3,7 +3,7 @@
 // =============================================================================
 
 
-.jumbo {
+%jumbo {
   @extend %panel;
   @include padding(64 32, em);
   min-height: em(128);
@@ -18,11 +18,14 @@
   }
 
   // .title {}
-
   // .subtitle {}
 }
 
+.jumbo {
+  @extend %jumbo;
+}
+
 .jumbo-wide {
-  @extend .jumbo;
+  @extend %jumbo;
   border-radius: 0;
 }
