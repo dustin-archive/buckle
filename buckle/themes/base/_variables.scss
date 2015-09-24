@@ -12,15 +12,15 @@ $color-first: rgb(0, 127, 191) !default;
 $color-second: rgb(255, 127, 63) !default;
 $background-color: $white !default;
 
-@import 'color-first';
-@import 'color-second';
+@import 'variables/color-first';
+@import 'variables/color-second';
 
 // Borders
 $border-radius: 4 !default;
 $border-thickness: 2 !default;  // works best with multiples of 2
 $border-color: $color-first-2 !default;
 
-@import 'borders';
+@import 'variables/borders';
 
 // Typography
 $font-first: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
@@ -30,7 +30,7 @@ $font-monospace: 'SourceCodePro-Medium', monospace !default;
 $font-size: 16 !default;
 $line-height: 24 !default;
 
-@import 'typography';
+@import 'variables/typography';
 
 
 // Temporary

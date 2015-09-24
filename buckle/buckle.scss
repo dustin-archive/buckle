@@ -3,32 +3,44 @@
 // =============================================================================
 
 
+// Bower imports
 @import 'bower-imports/font-awesome';
 
+// Functions
 @import 'framework/scss/functions/color-mixers';
 @import 'framework/scss/functions/inverse';
 @import 'framework/scss/functions/layer-colors';
 @import 'framework/scss/functions/remove-alpha';
 @import 'framework/scss/functions/value';
 
+// Mixins
 @import 'framework/scss/mixins/lifesaver/main';
 @import 'framework/scss/mixins/flex-align';     // Requires: lifesaver (is-null)
 @import 'framework/scss/mixins/icons';          // Requires: lifesaver
 @import 'framework/scss/mixins/line';           // Requires: lifesaver
 @import 'framework/scss/mixins/transition';     // Requires: lifesaver (is-null)
 
+// Grid
+// re-organize this??
 @import 'framework/scss/grid/main';
 
+// Themes
+@import 'themes/base/variables';
+@import 'themes/base/layout';
+
+// Framework
 @import 'framework/scss/clearfix';
 @import 'framework/scss/general';
 @import 'framework/scss/placeholders';
 
+// Panel
 @import 'framework/scss/panel/panel';
 @import 'framework/scss/panel/panel-interactive';
 @import 'framework/scss/panel/group';
 @import 'framework/scss/panel/group-direction';
 @import 'framework/scss/panel/test';
 
+// Elements
 @import 'framework/scss/elements/anchor';
 @import 'framework/scss/elements/blockquote';
 @import 'framework/scss/elements/code';
@@ -40,6 +52,7 @@
 @import 'framework/scss/elements/paragraph';
 @import 'framework/scss/elements/svg';
 
+// Components
 @import 'components/form-group/form-group';
 @import 'components/menu/menu';                               // Requires: icons
 
