@@ -25,9 +25,6 @@ $breakpoints: ();
   }
 }
 
-// Generate default breakpoints
-@include generate-breakpoints;
-
 // Breakpoint mixin
 @mixin breakpoint($breakpoint) {
   $media-width: map-get($breakpoints, $breakpoint);

@@ -22,7 +22,7 @@
   }
 }
 
-// Adapter mixins
+// Adapters
 @mixin column($list) {
   @include adapter(column, $list);
 }
