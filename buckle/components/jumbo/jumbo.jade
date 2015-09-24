@@ -1,0 +1,9 @@
+mixin jumbo(size)
+  if size == 'wide'
+    header.wrapper.jumbo-wide
+      .center
+        block
+  else
+    header.wrapper
+      .center.jumbo
+        block
