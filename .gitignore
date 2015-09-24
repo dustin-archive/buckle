@@ -4,13 +4,9 @@ config.codekit
 .sass-cache
 .scss-lint.yml
 
-node_modules
 bower_components
 
 examples
 dist
 images
 index.html
-
-gulpfile.coffee
-package.json
