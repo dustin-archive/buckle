@@ -6,6 +6,7 @@
 %panel-interactive-common { // better name?
   @extend %panel;
   transition: all .25s; // variable?
+  cursor: pointer;
   z-index: 1; // So borders transition properly when z-index changes
 
   &:hover,
