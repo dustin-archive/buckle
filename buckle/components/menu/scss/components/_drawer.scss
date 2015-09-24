@@ -52,8 +52,8 @@
       ul {
         @at-root .menu-dropdown & {
           @include breakpoint(6) {
-            @include padding(unset x, em); // Remove drawer padding for nested drawers on desktop
-            @include position-unset(unset x x x);
+            @include padding(0 x, em); // Remove drawer padding for nested drawers on desktop
+            @include position-initial(initial x x x);
           }
         }
       }
