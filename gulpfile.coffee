@@ -12,7 +12,7 @@ process = require('gulp-postcss')
 prefixer = require('gulp-autoprefixer')
 
 # External
-presass_lifesaver = require('presass_lifesaver')
+presass_lifesaver = require('./presass_lifesaver')
 
 # Directories
 presass_dir = 'buckle/'

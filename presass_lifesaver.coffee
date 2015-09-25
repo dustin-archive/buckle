@@ -1,5 +1,6 @@
 postcss = require('postcss')
-split_root = require('split_root')
+
+split_root = require('./split_root')
 
 module.exports = postcss.plugin 'presass_lifesaver', ->
   return (css, result) ->
