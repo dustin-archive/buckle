@@ -1,4 +1,4 @@
-// LifeSaver - 1.1.2
+// LifeSaver - 1.2.0
 // September 24, 2015
 // The MIT License (MIT)
 // Copyright (c) 2015 Dustin Dowell
@@ -67,14 +67,23 @@
           $value: map-get($map, $key);
 
           // Append suffix when needed
-          @if $property == border-width {
+          @if $property == margin {
+            $key: 'margin-' + $key;
+          }
+          @else if $property == padding {
+            $key: 'padding-' + $key;
+          }
+          @else if $property == border-width {
             $key: 'border-' + $key + '-width';
+          }
+          @else if $property == border-style {
+            $key: 'border-' + $key + '-style';
           }
           @else if $property == border-radius {
             $key: 'border-' + $key + '-radius';
           }
-          @else if $property == margin or $property == padding {
-            $key: $property + '-' + $key;
+          @else if $property == border-color {
+            $key: 'border-' + $key + '-color';
           }
 
           // Output
