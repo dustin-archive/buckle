@@ -5,7 +5,7 @@
 
 ul,
 ol {
-  @include margin($font-size x x $line-height, em);
+  margin: $font-size x x $line-height, em;
   list-style-position: inside;
 
   ul,
@@ -14,13 +14,13 @@ ol {
   }
 
   &.unstyled {
-    margin-left: em($line-height);
+    margin-left: $line-height, em;
     list-style: none;
   }
 }
 
 ol.right {
-  margin-left: em($line-height * 2);
+  margin-left: $line-height * 2, em;
   list-style-position: initial;
 
   ul,
@@ -29,6 +29,6 @@ ol.right {
   }
 
   ol.right {
-    margin-left: em($line-height);
+    margin-left: $line-height, em;
   }
 }

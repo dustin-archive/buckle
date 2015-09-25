@@ -4,20 +4,20 @@
 
 
 body {
-  min-width: px($page-min);
+  min-width: $page-min, px;
+}
+
+.wrapper {
+  display: flex;
+  padding: $gutter-width, em;
+  justify-content: center;
 }
 
 .center {
   // width: 100%; // i'm not sure if i could use flex or auto for centering
   // margin: auto;
-  max-width: em($page-max);
+  max-width: $page-max, em;
   flex: 1;
-}
-
-.wrapper {
-  display: flex;
-  padding: em($gutter-width);
-  justify-content: center;
 }
 
 [class^='grid-'] {

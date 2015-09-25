@@ -6,11 +6,11 @@
 p,
 address {
   @extend %block-margin-top;
-  margin-top: em($line-height / 4);
+  margin-top: $line-height / 4, em;
 }
 
 small {
-  $font-size-small: $font-size * .75; // move to variables
-  @include padding(x $font-size-small, em);
-  font-size: em($font-size-small);
+  $font-size-small: $font-size * .75; // move to variables?
+  padding: x $font-size-small, em;
+  font-size: $font-size-small, em;
 }

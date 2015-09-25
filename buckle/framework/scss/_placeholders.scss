@@ -10,16 +10,16 @@
 }
 
 %avatar {
-  @include size(62, em);
+  size: 62, em;
   position: relative;
-  border-radius: 50%;
+  radius: 50, pct;
   background-color: $color-first-1;
   background-size: cover;
   box-shadow: $border;
 
   &::before { // seperate placeholder?
-    @include size(24, em);
-    @include absolute(x 0 0 x);
+    size: 24, em;
+    absolute: x 0 0 x;
     display: block;
     border-radius: 50%;
     background-color: $color-first-1;

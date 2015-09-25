@@ -9,8 +9,8 @@
 
   @at-root .menu-dropdown & {
     @include breakpoint(6) {
-      background-color: transparent;
-      box-shadow: none;
+      background-color: initial;
+      box-shadow: initial;
     }
   }
 
@@ -19,7 +19,7 @@
 
     @at-root .menu-dropdown & {
       @include breakpoint(6) {
-        border-radius: em($border-radius);
+        radius: $border-radius, em;
         background-color: $background-color;
         box-shadow: $border;
       }
@@ -27,11 +27,11 @@
 
     ul {
       background-color: $color-first-1 !important; // SCSS Lint: I know what I'm doing here.
-      box-shadow: none !important; // SCSS Lint: I know what I'm doing here.
+      box-shadow: initial !important; // SCSS Lint: I know what I'm doing here.
 
       @at-root .menu-dropdown & {
         @include breakpoint(6) {
-          border-radius: 0;
+          radius: 0;
         }
       }
     }

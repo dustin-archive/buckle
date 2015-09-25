@@ -6,23 +6,23 @@
 samp,
 code {
   @extend %panel-style;
-  @include padding(($line-height / 8) ($line-height / 4), em);
+  padding: ($line-height / 8) ($line-height / 4), em;
   font-family: $font-monospace;
   box-shadow: $border-top;
 }
 
 kbd {
   @extend %panel-style;
-  @include padding(($line-height / 8) ($line-height / 4), em);
-  @include margin(x ($line-height / 8), em);
+  margin: x ($line-height / 8), em;
+  padding: ($line-height / 8) ($line-height / 4), em;
   font-family: $font-monospace;
   box-shadow: $border-bottom;
 }
 
 pre {
   @extend %panel;
-  @include padding(($line-height / 2) $line-height, em);
-  margin-top: em($line-height / 2);
+  margin-top: $line-height / 2, em;
+  padding: ($line-height / 2) $line-height, em;
   font-family: $font-monospace;
   line-height: 1.25;
   overflow: auto;

@@ -21,7 +21,7 @@
 
   &.menu-dropdown {
     @include breakpoint(6) {
-      @include padding(x ($gutter-width / 2), em);
+      padding: x ($gutter-width / 2), em;
     }
   }
 
@@ -35,16 +35,16 @@
     list-style: none;
 
     &::before { // Overrides type.scss
-      padding: unset;
-      content: unset;
+      padding: initial;
+      content: initial;
     }
   }
 
   a {
-    @include padding(x 8, em);
     @include transition(color background, $transition-speed);
     display: block;
-    line-height: em($link-height);
+    padding: x 8, em;
+    line-height: $link-height, em;
 
     &::before {
       @include transition(transform, $transition-speed);

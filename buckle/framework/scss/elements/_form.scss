@@ -4,7 +4,7 @@
 
 
 %form-element {
-  @include padding(4 x, em);
+  padding: 4 x, em;
   outline: initial;
 }
 
@@ -15,7 +15,7 @@ button {
 
 input {
   @extend %form-element;
-  line-height: em($line-height); // Consistent with <button>
+  line-height: $line-height, em; // Consistent with <button>
 
   &[type='text'] {
     @extend %panel-interactive-border;

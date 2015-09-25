@@ -4,12 +4,12 @@
 
 
 hr {
-  @include margin($margin-top x, em);
-  height: em($border-thickness);
+  height: $border-thickness, em;
+  margin: $margin-top x, em;
   background-color: $color-first-2;
 
   &.bold {
-    @include margin(($margin-top - ($border-thickness / 2)) x, em);
-    height: em($border-thickness-bold);
+    height: $border-thickness-bold, em;
+    margin: ($margin-top - ($border-thickness / 2)) x, em;
   }
 }

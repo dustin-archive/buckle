@@ -13,7 +13,7 @@
   // Grid placeholders
   @if is-null($column-media) {
     %grid-all-children {
-      @include margin($column-gutter-height $column-gutter-width x x, em);
+      margin: $column-gutter-height $column-gutter-width x x, em;
     }
 
     %grid-first-row {
@@ -26,7 +26,7 @@
   }
   @else {
     %grid-all-children#{$column-media} {
-      @include margin($column-gutter-height $column-gutter-width x x, em);
+      margin: $column-gutter-height $column-gutter-width x x, em;
     }
 
     %grid-first-row#{$column-media} {

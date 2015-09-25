@@ -15,12 +15,12 @@
 
   @at-root .menu-dropdown & {
     @include breakpoint(6) {
-      transform: unset; // Make sure the drawer is on-canvas on desktop
+      transform: initial; // Make sure the drawer is on-canvas on desktop
     }
   }
 
   &.toggled {
-    transform: unset; // Slide the drawer on-canvas when toggled
+    transform: initial; // Slide the drawer on-canvas when toggled
   }
 }
 
@@ -35,7 +35,7 @@
     }
 
     @include breakpoint(6) {
-      transform: unset; // Make sure the page is on-canvas on the desktop
+      transform: initial; // Make sure the page is on-canvas on the desktop
     }
   }
 }

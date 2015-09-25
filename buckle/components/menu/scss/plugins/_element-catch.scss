@@ -10,7 +10,7 @@
 
     &.scrolled {
       position: fixed;
-      transform: unset;
+      transform: initial;
     }
   }
 }

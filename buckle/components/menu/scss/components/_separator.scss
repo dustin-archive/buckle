@@ -4,7 +4,7 @@
 
 
 .menu-separator {
-  @include margin(4 auto, em);
   width: calc(100% - #{em(4)});
-  height: em(2);
+  height: 2, em;
+  margin: 4 auto, em;
 }

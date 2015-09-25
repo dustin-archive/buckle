@@ -5,16 +5,16 @@
 
 @mixin fa($width, $height, $padding: 0) {
   &[class^='fa-'] {
-    @include padding(x ($width / 2) x $width, em);
+    padding: x ($width / 2) x $width, em;
     position: relative; // Keeps icons relative to the button
 
     &::before {
-      @include absolute(0 x x $padding, em);
+      absolute: 0 x x $padding, em;
       display: block;
-      width: em($width - $padding);
+      width: $width - $padding, em;
       transform: translateZ(0); // Fixes Chrome bug on retina that sometimes position is off by x: 1, y: -1.
       font-family: FontAwesome;
-      line-height: em($height);
+      line-height: $height, em;
       text-align: center;
     }
   }

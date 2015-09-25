@@ -29,6 +29,6 @@
     $l: if(index($side, left), $padding-horizontal, null);
   }
 
-  @include padding($t $r $b $l, px);
-  @include border-width($t $r $b $l, px);
+  padding: $t $r $b $l, px; // why not em?
+  border-width: $t $r $b $l, px; // why not em?
 }

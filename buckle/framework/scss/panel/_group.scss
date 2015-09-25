@@ -8,7 +8,7 @@
 
   > %panel {
     margin: 0;
-    border-radius: if($border-radius, 0, null);
+    radius: if($border-radius, 0, null);
     flex: 1;
   }
 }
@@ -17,15 +17,15 @@
   @extend %panel-group;
 
   > %panel {
-    margin-left: em(-$border-thickness);
+    margin-left: 0 - $border-thickness, em;
 
     &:first-child {
-      @include radius($border-radius x x $border-radius, em);
       margin-left: 0;
+      radius: $border-radius x x $border-radius, em;
     }
 
     &:last-child {
-      @include radius(x $border-radius $border-radius x, em);
+      radius: x $border-radius $border-radius x, em;
     }
   }
 }
@@ -35,15 +35,15 @@
   flex-direction: column;
 
   > %panel {
-    margin-top: em(-$border-thickness);
+    margin-top: 0 - $border-thickness, em;
 
     &:first-child {
-      @include radius($border-radius $border-radius x x, em);
       margin-top: 0;
+      radius: $border-radius $border-radius x x, em;
     }
 
     &:last-child {
-      @include radius(x x $border-radius $border-radius, em);
+      radius: x x $border-radius $border-radius, em;
     }
   }
 }
@@ -57,16 +57,16 @@
 // %panel-group-vertical-top {}
 
 %panel-group-vertical-bottom {
-  margin-top: em(-$border-thickness);
+  margin-top: 0 - $border-thickness, em;
 
   > %panel,
   > %panel-interactive {
     &:first-child {
-      @include radius(0 x x x);
+      radius: 0 x x x; // add radius-top, radius-right, etc to lifesaver?
     }
 
     &:last-child {
-      @include radius(x 0 x x);
+      radius: x 0 x x; // add radius-top, radius-right, etc to lifesaver?
     }
   }
 }

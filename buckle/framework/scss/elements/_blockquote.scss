@@ -5,21 +5,21 @@
 
 blockquote {
   @extend %block-margin-top;
-  @include padding(($line-height / 2) $line-height, em);
-  margin-top: em($line-height / 2);
-  border-radius: 0 em($border-radius) em($border-radius) 0;
+  margin-top: $line-height / 2, em;
+  padding: ($line-height / 2) $line-height, em;
+  radius: 0 $border-radius $border-radius 0, em; // 0 or x?
   background-color: $color-first-1;
   color: $color-first-8;
   box-shadow: $border-left-bold;
 
   &.reverse {
-    border-radius: em($border-radius) 0 0 em($border-radius);
+    radius: $border-radius 0 0 $border-radius, em; // 0 or x?
     text-align: right;
     box-shadow: $border-right-bold;
   }
 
   footer {
-    @include padding($margin-top x x x, em, 12);
-    font-size: em(12);
+    padding: $margin-top, em, 12;
+    font-size: 12, em;
   }
 }

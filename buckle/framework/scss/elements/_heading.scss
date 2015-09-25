@@ -25,7 +25,7 @@
 
   h#{$heading-i} {
     @extend %heading;
-    margin-top: em($line-height / 2, $heading-font-size);
-    font-size: em($heading-font-size);
+    margin-top: $line-height / 2, em, $heading-font-size;
+    font-size: $heading-font-size, em;
   }
 }

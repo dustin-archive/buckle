@@ -7,11 +7,11 @@ $avatar-size: 192;
 $border-width: 12;
 
 .profile {
-  @include padding(0 x x x);
-  height: em(128);
+  height: 128, em;
+  padding-top: 0;
 
   .center {
-    @include padding(0 x);
+    padding: 0 x;
   }
 
   .inner {
@@ -19,8 +19,9 @@ $border-width: 12;
   }
 
   .profile-avatar {
-    @include size(($avatar-size - ($border-width * 0)), em);
-    margin-top: em(0 - ($avatar-size / 2));
+    // @include size(($avatar-size - ($border-width * 0)), em); // this makes no sense
+    size: $avatar-size, em;
+    margin-top: 0 - ($avatar-size / 2), em;
     border: solid em($border-width) $white;
     border-radius: 50%;
     background-color: $white;

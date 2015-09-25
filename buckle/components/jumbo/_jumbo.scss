@@ -5,8 +5,8 @@
 
 %jumbo {
   @extend %panel;
-  @include padding(64 32, em);
-  min-height: em(128);
+  min-height: 128, em;
+  padding: 64 32, em;
   background: center center;
   background-image: url('../../images/banner.png');
   background-size: cover;
@@ -14,7 +14,7 @@
   text-align: center;
 
   @include breakpoint(6) {
-    @include padding(96 64, em);
+    padding: 96 64, em;
   }
 
   // .title {}
