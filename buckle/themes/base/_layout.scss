@@ -42,3 +42,28 @@ body {
 // Github
 .grid-github { @include grid(2); }
 .column-github { @include column(6); }
+
+
+// .grid-12-6 { @include grid(6 '12-6'); }
+// .column-12-6 { @include column(2 '1-6'); background-color: $color-first-2;}
+
+.test {
+  padding: ($line-height / 8) ($line-height / 4), em;
+  padding: em($line-height / 8) em($line-height / 4);
+  padding: if($line-height, 0, null);
+  padding: x 16, em;
+
+  size: 25, em;
+  size: x 25, em;
+
+  margin: 25, em;
+  margin: x 25, em;
+
+  // border-radius: 25, em, 5, $flag: !important;
+  border-radius: 25, em, 5, !important;
+  border-radius: 25, em;
+  border-radius: x 25, em;
+
+  radius: 25, em;
+  radius: x 25, em;
+}
