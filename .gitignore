@@ -2,14 +2,11 @@
 .codekit-cache
 config.codekit
 .sass-cache
-.scss-lint.yml
 
 bower_components
 node_modules
 
 buckle-sass
-gulpfile.coffee
-package.json
 
 examples
 dist
