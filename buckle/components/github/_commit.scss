@@ -20,7 +20,7 @@
 .commit {
   @extend %panel-interactive;
   display: flex;
-  padding: 8 16, em;
+  padding: em(8) em(16)
 }
 
 .commit-left,
@@ -33,22 +33,24 @@
 }
 
 .commit-right {
-  padding: 8 x, em;
+  padding-top: em(8);
+  padding-bottom: em(8);
 
   .commit-group-horizontal:first-child {
-    margin-right: 16, em;
+    margin-right: em(16);
   }
 }
 
 .commit-information-left {
-  margin-right: 16, em;
+  margin-right: em(16);
 }
 
 // .commit-information-right {}
 
 .commit-avatar {
   @extend %avatar;
-  size: 48, em;
+  width: em(48);
+  height: em(48);
 }
 
 .commit-title {

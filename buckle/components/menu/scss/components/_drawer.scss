@@ -4,12 +4,16 @@
 
 
 .menu-drawer {
-  absolute: $link-height 0 x x, em;
+  position: absolute;
+  top: em($link-height);
+  right: 0;
   width: 75vw;
   height: calc(100vh - #{em($gutter-height * 2)});
 
   @at-root .menu-inline & {
-    absolute: $link-height 0 x x, em;
+    position: absolute;
+    top: em($link-height);
+    right: 0;
   }
 
   @at-root .menu-dropdown & {
@@ -44,16 +48,20 @@
 
       @at-root .menu-dropdown & {
         @include breakpoint(6) {
-          padding: 6 x, em; // Drawer padding on desktop
-          absolute: $link-height x x x, em; // Prevents the bar from stretching when the menu expands
+          padding-top: em(6);
+          padding-bottom: em(6);
+          position: absolute;
+          top: em($link-height); // Prevents the bar from stretching when the menu expands
         }
       }
 
       ul {
         @at-root .menu-dropdown & {
           @include breakpoint(6) {
-            padding: 0 x, em; // Remove drawer padding for nested drawers on desktop
-            position-initial: initial x x x;
+            padding-top: 0; // Remove drawer padding for nested drawers on desktop
+            padding-bottom: 0; // Remove drawer padding for nested drawers on desktop
+            position: initial;
+            top: initial;
           }
         }
       }
@@ -75,6 +83,7 @@
 
   a {
     @include fa($link-height, $link-height);
-    padding: x 16 x 16, em;
+    padding-right: em(16);
+    padding-left: em(16);
   }
 }

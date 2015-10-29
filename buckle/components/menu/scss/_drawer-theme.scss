@@ -19,7 +19,7 @@
 
     @at-root .menu-dropdown & {
       @include breakpoint(6) {
-        radius: $border-radius, em;
+        border-radius: em($border-radius);
         background-color: $background-color;
         box-shadow: $border;
       }
@@ -31,7 +31,7 @@
 
       @at-root .menu-dropdown & {
         @include breakpoint(6) {
-          radius: 0;
+          border-radius: 0;
         }
       }
     }

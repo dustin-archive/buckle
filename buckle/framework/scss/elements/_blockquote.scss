@@ -4,22 +4,22 @@
 
 
 blockquote {
-  @extend %block-margin-top;
-  margin-top: $line-height / 2, em;
-  padding: ($line-height / 2) $line-height, em;
-  radius: 0 $border-radius $border-radius 0, em; // 0 or x?
+  // @extend %block-margin-top;
+  margin-top: em($line-height / 2);
+  padding: em($line-height / 2) em($line-height);
+  border-radius: em(0) em($border-radius) em($border-radius) em(0); // 0 or x?
   background-color: $color-first-1;
   color: $color-first-8;
   box-shadow: $border-left-bold;
 
   &.reverse {
-    radius: $border-radius 0 0 $border-radius, em; // 0 or x?
+    border-radius: em($border-radius) em(0) em(0) em($border-radius);  // 0 or x?
     text-align: right;
     box-shadow: $border-right-bold;
   }
 
   footer {
-    padding: $margin-top, em, 12;
-    font-size: 12, em;
+    padding: em($margin-top, 12);
+    font-size: em(12);
   }
 }

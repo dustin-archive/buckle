@@ -3,24 +3,30 @@
 // =============================================================================
 
 
-%block-margin-top { // new name for this? perhaps dealing with panel?
-  &:first-child {
-    margin-top: 0;
-  }
-}
+// DEPREATED?
+// %block-margin-top {
+//   &:first-child {
+//     margin-top: 0;
+//   }
+// }
 
 %avatar {
-  size: 62, em;
   position: relative;
-  radius: 50, pct;
+  width: em(62);
+  height: em(62);
+  border-radius: 50%;
   background-color: $color-first-1;
   background-size: cover;
   box-shadow: $border;
 
-  &::before { // seperate placeholder?
-    size: 24, em;
-    absolute: x 0 0 x;
+  // SEPERATE PLACEHOLDER
+  &::before {
     display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: em(24);
+    height: em(24);
     border-radius: 50%;
     background-color: $color-first-1;
     box-shadow: $border;
