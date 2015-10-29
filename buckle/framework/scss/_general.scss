@@ -28,5 +28,5 @@ html {
 
 body {
   font-family: $font-first;
-  line-height: $line-height, un;
+  line-height: un($line-height);
 }
