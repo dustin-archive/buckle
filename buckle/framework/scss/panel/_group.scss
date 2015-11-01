@@ -1,14 +1,9 @@
-//
-// + Group
-// =============================================================================
-
-
 %panel-group {
   display: flex;
 
   > %panel {
     margin: 0;
-    radius: if($border-radius, 0, null);
+    border-radius: if($border-radius, 0, null);
     flex: 1;
   }
 }
@@ -17,15 +12,17 @@
   @extend %panel-group;
 
   > %panel {
-    margin-left: 0 - $border-thickness, em;
+    margin-left: em(0 - $border-thickness);
 
     &:first-child {
       margin-left: 0;
-      radius: $border-radius x x $border-radius, em;
+      border-top-left-radius: em($border-radius);
+      border-bottom-left-radius: em($border-radius);
     }
 
     &:last-child {
-      radius: x $border-radius $border-radius x, em;
+      border-top-right-radius: em($border-radius);
+      border-bottom-right-radius: em($border-radius);
     }
   }
 }
@@ -35,15 +32,17 @@
   flex-direction: column;
 
   > %panel {
-    margin-top: 0 - $border-thickness, em;
+    margin-top: em(0 - $border-thickness);
 
     &:first-child {
       margin-top: 0;
-      radius: $border-radius $border-radius x x, em;
+      border-top-left-radius: em($border-radius);
+      border-top-right-radius: em($border-radius);
     }
 
     &:last-child {
-      radius: x x $border-radius $border-radius, em;
+      border-bottom-right-radius: em($border-radius);
+      border-bottom-left-radius: em($border-radius);
     }
   }
 }
@@ -57,16 +56,16 @@
 // %panel-group-vertical-top {}
 
 %panel-group-vertical-bottom {
-  margin-top: 0 - $border-thickness, em;
+  margin-top: em(0 - $border-thickness);
 
   > %panel,
   > %panel-interactive {
     &:first-child {
-      radius: 0 x x x; // add radius-top, radius-right, etc to lifesaver?
+      border-top-left-radius: 0;
     }
 
     &:last-child {
-      radius: x 0 x x; // add radius-top, radius-right, etc to lifesaver?
+      border-top-right-radius: 0;
     }
   }
 }
