@@ -1,5 +1,5 @@
 %jumbo {
-  @extend %panel;
+  @extend %panel-inset;
   min-height: em(128);
   padding: em(64 32);
   background: center center;
