@@ -1,69 +1,39 @@
-//
-// + Theme
-// =============================================================================
-
-
 body {
   background-color: $color-first-1;
 }
 
 // Headings
 .grid-heading { @include grid(3); }
-.column-heading { @include column(4); }
+.column-heading { @include column(3); }
 
 // Code
 .grid-code { @include grid(2); }
-.column-code { @include column(6); }
+.column-code { @include column(2); }
 
 // Blockquote
 .grid-blockquote { @include grid(2); }
-.column-blockquote { @include column(6); }
+.column-blockquote { @include column(2); }
 
 // Horizontal-rule
 .grid-horizontal-rule { @include grid(2); }
-.column-horizontal-rule { @include column(6); }
+.column-horizontal-rule { @include column(2); }
 
 // List
 .grid-list { @include grid(4); }
-.column-list { @include column(3); }
+.column-list { @include column(4); }
 
 // Form
 .grid-form { @include grid(6); }
-.column-form { @include column(2); }
+.column-form { @include column(6); }
 
 // Input
 .grid-panel { @include grid(4); }
-.column-panel { @include column(3); }
+.column-panel { @include column(4); }
 
 // Twitter
 .grid-twitter { @include grid(2); }
-.column-twitter { @include column(6); }
+.column-twitter { @include column(2); }
 
 // Github
 .grid-github { @include grid(2); }
-.column-github { @include column(6); }
-
-
-// .grid-12-6 { @include grid(6 '12-6'); }
-// .column-12-6 { @include column(2 '1-6'); background-color: $color-first-2;}
-
-.test {
-  padding: ($line-height / 8) ($line-height / 4), em;
-  padding: em($line-height / 8) em($line-height / 4);
-  padding: if($line-height, 0, null);
-  padding: x 16, em;
-
-  size: 25, em;
-  size: x 25, em;
-
-  margin: 25, em;
-  margin: x 25, em;
-
-  // border-radius: 25, em, 5, $flag: !important;
-  border-radius: 25, em, 5, !important;
-  border-radius: 25, em;
-  border-radius: x 25, em;
-
-  radius: 25, em;
-  radius: x 25, em;
-}
+.column-github { @include column(2); }

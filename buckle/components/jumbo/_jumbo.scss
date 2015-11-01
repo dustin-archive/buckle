@@ -13,7 +13,7 @@
   color: $white;
   text-align: center;
 
-  @include breakpoint(6) {
+  @include break(6) {
     padding: em(96) em(64);
   }
 
