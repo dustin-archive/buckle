@@ -1,8 +1,3 @@
-//
-// + Borders
-// =============================================================================
-
-
 $border: inset 0 0 0 em($border-thickness) $border-color !default;
 $border-top: inset 0 em($border-thickness) 0 0 $border-color !default;
 $border-bottom: inset 0 em(-$border-thickness) 0 0 $border-color !default;

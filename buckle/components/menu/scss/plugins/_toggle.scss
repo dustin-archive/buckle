@@ -1,8 +1,3 @@
-//
-// + jquery.toggle.js
-// =============================================================================
-
-
 .menu-drawer {
   @include transition(transform, $transition-speed);
   transform: translateX(75vw); // Drawer is always off-canvas unless toggled

@@ -1,4 +1,3 @@
-
 # jquery.image-snap.js
 $('img').imageSnap('data-src', 16, 16)
 

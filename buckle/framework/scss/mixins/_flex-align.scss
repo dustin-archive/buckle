@@ -1,8 +1,3 @@
-//
-// + Flex align
-// =============================================================================
-
-
 @mixin flex-align($horizontal, $vertical: null) {
   @if not is-null($horizontal) {
     @if $horizontal == start or $horizontal == left {

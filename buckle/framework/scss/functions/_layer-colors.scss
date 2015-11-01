@@ -1,8 +1,3 @@
-//
-// + Layer colors
-// =============================================================================
-
-
 @function layer-colors($above, $below) {
   $color-above: rgba($above, 1);
   $color-below: rgba($below, 1);
