@@ -46,3 +46,20 @@
     border: em($border-thickness) solid layer-colors($border-color, $color-first-3); // variable?
   }
 }
+
+// Temporary
+.panel {
+  @extend %panel;
+}
+
+.panel-interactive {
+  @extend %panel-interactive;
+}
+
+.panel-group-horizontal {
+  @extend %panel-group-horizontal;
+}
+
+.panel-group-vertical {
+  @extend %panel-group-vertical;
+}
