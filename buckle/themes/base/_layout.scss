@@ -2,6 +2,10 @@ body {
   background-color: $color-first-1;
 }
 
+.center {
+  max-width: 100%;
+}
+
 // Headings
 .grid-heading { @include grid(3); }
 .column-heading { @include column(3); }
