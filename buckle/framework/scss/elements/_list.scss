@@ -1,11 +1,7 @@
-//
-// + List
-// =============================================================================
-
-
 ul,
 ol {
-  margin: $font-size x x $line-height, em;
+  margin-top: em($font-size);
+  margin-left: em($line-height);
   list-style-position: inside;
 
   ul,
@@ -14,13 +10,13 @@ ol {
   }
 
   &.unstyled {
-    margin-left: $line-height, em;
+    margin-left: em($line-height);
     list-style: none;
   }
 }
 
 ol.right {
-  margin-left: $line-height * 2, em;
+  margin-left: em($line-height * 2);
   list-style-position: initial;
 
   ul,
@@ -29,6 +25,6 @@ ol.right {
   }
 
   ol.right {
-    margin-left: $line-height, em;
+    margin-left: em($line-height);
   }
 }
