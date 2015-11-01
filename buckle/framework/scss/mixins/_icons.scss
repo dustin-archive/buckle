@@ -1,20 +1,18 @@
-//
-// + Icons
-// =============================================================================
-
-
 @mixin fa($width, $height, $padding: 0) {
   &[class^='fa-'] {
-    padding: x ($width / 2) x $width, em;
+    padding-right: em($width / 2);
+    padding-left: em($width);
     position: relative; // Keeps icons relative to the button
 
     &::before {
-      absolute: 0 x x $padding, em;
+      position: absolute;
+      top: 0;
+      left: em($padding);
       display: block;
-      width: $width - $padding, em;
+      width: em($width - padding);
       transform: translateZ(0); // Fixes Chrome bug on retina that sometimes position is off by x: 1, y: -1.
       font-family: FontAwesome;
-      line-height: $height, em;
+      line-height: em($height);
       text-align: center;
     }
   }
