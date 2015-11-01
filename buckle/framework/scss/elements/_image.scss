@@ -1,8 +1,3 @@
-//
-// + Images
-// =============================================================================
-
-
 // I'm unsure about this p tag. Is there a better place for stuff like this?
 p {
   img,
@@ -19,12 +14,16 @@ img {
   $img-gutter-width: $gutter-width / 2;
 
   &.left {
-    @include margin($img-gutter-height $img-gutter-width $img-gutter-height x, em);
+    margin-top: em($img-gutter-height);
+    margin-right: em($img-gutter-width);
+    margin-bottom: em($img-gutter-height);
     float: left;
   }
 
   &.right {
-    @include margin($img-gutter-height x $img-gutter-height $img-gutter-width, em);
+    margin-top: em($img-gutter-height);
+    margin-bottom: em($img-gutter-height);
+    margin-left: em($img-gutter-width);
     float: right;
   }
 }
