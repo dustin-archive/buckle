@@ -1,10 +1,6 @@
-//
-// + Form
-// =============================================================================
-
-
 %form-element {
-  padding: 4 x, em;
+  padding-top: em(4);
+  padding-bottom: em(4);
   outline: initial;
 }
 
@@ -15,7 +11,7 @@ button {
 
 input {
   @extend %form-element;
-  line-height: $line-height, em; // Consistent with <button>
+  line-height: em($line-height); // Consistent with <button>
 
   &[type='text'] {
     @extend %panel-interactive-border;
