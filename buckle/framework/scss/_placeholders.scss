@@ -7,12 +7,12 @@
 
 %avatar {
   position: relative;
-  width: em(62);
-  height: em(62);
+  width: em(64);
+  height: em(64);
   border-radius: 50%;
   background-color: $color-first-1;
   background-size: cover;
-  box-shadow: $border;
+  border: $border;
 
   // SEPERATE PLACEHOLDER
   &::before {
@@ -24,7 +24,7 @@
     height: em(24);
     border-radius: 50%;
     background-color: $color-first-1;
-    box-shadow: $border;
+    border: $border;
     content: '';
   }
 }

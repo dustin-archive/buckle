@@ -5,12 +5,12 @@ blockquote {
   border-radius: em(0) em($border-radius) em($border-radius) em(0); // 0 or x?
   background-color: $color-first-1;
   color: $color-first-8;
-  box-shadow: $border-left-bold;
+  border: $border-bold-left;
 
   &.reverse {
     border-radius: em($border-radius) em(0) em(0) em($border-radius);  // 0 or x?
     text-align: right;
-    box-shadow: $border-right-bold;
+    border: $border-bold-right;
   }
 
   footer {

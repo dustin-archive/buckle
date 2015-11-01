@@ -4,7 +4,7 @@ $panel-margin: $line-height / 4; // add to variables theme file?
   border-radius: em($border-radius);
   background-color: $white;
   color: $color-first-8;
-  box-shadow: $border;
+  border: $border;
 
   @at-root .transparent & {
     background-color: $color-first-1;

@@ -15,7 +15,7 @@
 .commit {
   @extend %panel-interactive;
   display: flex;
-  padding: em(8) em(16)
+  padding: em(8 16)
 }
 
 .commit-left,

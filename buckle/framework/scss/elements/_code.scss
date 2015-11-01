@@ -3,7 +3,7 @@ code {
   @extend %panel-style;
   padding: em($line-height / 8) em($line-height / 4);
   font-family: $font-monospace;
-  box-shadow: $border-top;
+  border: $border-top;
 }
 
 kbd {
@@ -12,7 +12,7 @@ kbd {
   margin-right: em($line-height / 8);
   padding: em($line-height / 8) em($line-height / 4);
   font-family: $font-monospace;
-  box-shadow: $border-bottom;
+  border: $border-bottom;
 }
 
 pre {
