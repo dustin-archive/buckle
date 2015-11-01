@@ -1,27 +1,23 @@
-//
-// + Panel
-// =============================================================================
-
-
 $panel-margin: $line-height / 4; // add to variables theme file?
 
 %panel-style {
-  radius: $border-radius, em;
+  border-radius: em($border-radius);
   background-color: $white;
   color: $color-first-8;
   box-shadow: $border;
+
+  @at-root .transparent & {
+    background-color: $color-first-1;
+  }
 }
 
 %panel {
   @extend %panel-style;
-  margin-top: $panel-margin, em;
-  padding: x 16, em;
+  margin-top: em($panel-margin);
+  padding-left: em(16);
+  padding-right: em(16);
 
   &:first-child {
     margin-top: 0;
-  }
-
-  @at-root .transparent & {
-    background-color: $color-first-1;
   }
 }
