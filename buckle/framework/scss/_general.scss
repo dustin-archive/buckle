@@ -25,3 +25,7 @@ body {
   font-family: $font-first;
   line-height: un($line-height);
 }
+
+.wrapper {
+  padding: em(16);
+}
