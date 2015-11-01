@@ -1,5 +1,3 @@
-$panel-margin: $line-height / 4; // add to variables theme file?
-
 %panel-style {
   border-radius: em($border-radius);
   background-color: $white;
@@ -13,9 +11,9 @@ $panel-margin: $line-height / 4; // add to variables theme file?
 
 %panel {
   @extend %panel-style;
-  margin-top: em($panel-margin);
-  padding-left: em(16);
-  padding-right: em(16);
+  min-height: em(36);
+  margin-top: em(4);
+  padding: em(4 16);
 
   &:first-child {
     margin-top: 0;
