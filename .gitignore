@@ -6,8 +6,6 @@ config.codekit
 bower_components
 node_modules
 
-buckle-sass
-
 examples
 dist
 images
