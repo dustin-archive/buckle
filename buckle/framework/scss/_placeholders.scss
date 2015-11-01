@@ -7,12 +7,16 @@
 
 %avatar {
   position: relative;
-  width: em(64);
-  height: em(64);
+  width: em(70);
+  height: em(70);
   border-radius: 50%;
-  background-color: $color-first-1;
+  background-color: $white;
   background-size: cover;
   border: $border;
+
+  @at-root .transparent & {
+    background-color: $color-first-1;
+  }
 
   // SEPERATE PLACEHOLDER
   &::before {
@@ -20,11 +24,15 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    width: em(24);
-    height: em(24);
+    width: em(70 / (8 / 3));
+    height: em(70 / (8 / 3));
     border-radius: 50%;
-    background-color: $color-first-1;
+    background-color: $white;
     border: $border;
     content: '';
+
+    @at-root .transparent & {
+      background-color: $color-first-1;
+    }
   }
 }
