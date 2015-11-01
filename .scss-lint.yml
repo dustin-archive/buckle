@@ -5,15 +5,6 @@ linters:
   ElsePlacement:
     style: new_line # or 'same_line'
 
-  PropertySpelling:
-    extra_properties:
-      - # LifeSaver
-      - size
-      - min-size
-      - max-size
-      -
-      - radius
-
   PropertySortOrder:
     order:
       - # SMACSS
@@ -23,10 +14,6 @@ linters:
       - right
       - bottom
       - left
-      -
-      - size     # LifeSaver
-      - min-size # LifeSaver
-      - max-size # LifeSaver
       -
       - width
       - min-width
@@ -79,8 +66,6 @@ linters:
       - border-right-style
       - border-bottom-style
       - border-left-style
-      -
-      - radius # LifeSaver
       -
       - border-radius
       - border-top-left-radius
