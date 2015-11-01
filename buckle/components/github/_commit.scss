@@ -46,6 +46,11 @@
   @extend %avatar;
   width: em(48);
   height: em(48);
+
+  &::before {
+    width: em(18);
+    height: em(18);
+  }
 }
 
 .commit-title {
