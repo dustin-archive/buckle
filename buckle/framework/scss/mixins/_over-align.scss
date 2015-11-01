@@ -1,9 +1,6 @@
-//
-// + Over align
-// =============================================================================
-
-
 @mixin over-align($horizontal, $vertical: null) {
-  absolute: .5 x x .5, pct;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
