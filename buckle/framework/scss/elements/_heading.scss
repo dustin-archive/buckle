@@ -1,10 +1,5 @@
-//
-// + Heading
-// =============================================================================
-
-
 %heading {
-  @extend %block-margin-top;
+  // @extend %block-margin-top;
   margin-bottom: 0; // Normalize override
   font-family: $font-headings;
   font-weight: normal;
@@ -25,7 +20,7 @@
 
   h#{$heading-i} {
     @extend %heading;
-    margin-top: $line-height / 2, em, $heading-font-size;
-    font-size: $heading-font-size, em;
+    margin-top: em($line-height / 2, $heading-font-size);
+    font-size: em($heading-font-size);
   }
 }
