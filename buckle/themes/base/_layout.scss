@@ -27,17 +27,17 @@ body {
 .column-list { @include column(4); }
 
 // Form
-.grid-form { @include grid(6); }
-.column-form { @include column(6); }
+.grid-form { @include grid(2 '10:4'); }
+.column-form { @include column(2 '10:4'); }
 
 // Input
-.grid-panel { @include grid(4); }
-.column-panel { @include column(4); }
+.grid-panel { @include grid(2 '10:4'); }
+.column-panel { @include column(2 '10:4'); }
 
 // Twitter
 .grid-twitter { @include grid(2); }
 .column-twitter { @include column(2); }
 
 // Github
-.grid-github { @include grid(2); }
-.column-github { @include column(2); }
+.grid-github { @include grid(1 '6:2'); }
+.column-github { @include column(1 '6:2'); }
