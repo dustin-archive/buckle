@@ -1,3 +1,0 @@
-@function remove-alpha($color, $background) {
-  @return mix(rgba($color, 1), $background, alpha($color) * 100);
-}
