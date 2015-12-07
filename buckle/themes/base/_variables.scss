@@ -10,14 +10,6 @@ $background-color: $white !default;
 @import 'variables/color-first';
 @import 'variables/color-second';
 
-// Borders
-$border-radius: 4 !default;
-$border-thickness: 2 !default;  // works best with multiples of 2
-$border-color: $color-first-2 !default;
-
-@import 'variables/border';
-@import 'variables/border-inset';
-
 // Typography
 $font-first: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 $font-second: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
