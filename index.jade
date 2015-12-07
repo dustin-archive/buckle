@@ -1,21 +1,18 @@
 include buckle/buckle.jade
 
-doctype html
-html(lang='en-us')
-  head
-    meta(charset='UTF-8')
-    meta(name='viewport' content='width=device-width' initial-scale='1')
-
++html
+  +head
     title Buckle
 
     //- Bower
-    link(rel='stylesheet' href='bower_components/normalize-css/normalize.css')
+    +style('bower_components/normalize-css/normalize')
 
     //- Buckle
-    link(href='dist/css/buckle.css', rel='stylesheet', type='text/css')
+    +style('dist/css/buckle')
 
   body
     #page.page
+
       +jumbo('wide')
         h1.title Buckle 1.0.0 alpha
         h6.subtitle A front-end component based framework.
@@ -35,7 +32,7 @@ html(lang='en-us')
       include examples/code.jade
 
     //- Bower
-    //- script(src='bower_components/jquery/dist/jquery.min.js')
+    +script('bower_components/jquery/dist/jquery.min')
 
     //- Buckle
-    //- script(src='dist/js/jquery.buckle.js')
+    +script('dist/js/jquery.buckle')
