@@ -1,22 +1,22 @@
 samp,
 code {
-  @extend %panel-style;
+  // @extend %panel-style;
   padding: em($line-height / 8) em($line-height / 4);
   font-family: $font-monospace;
-  border: $border-top;
+  // border: $border-top;
 }
 
 kbd {
-  @extend %panel-style;
+  // @extend %panel-style;
   margin-left: em($line-height / 8);
   margin-right: em($line-height / 8);
   padding: em($line-height / 8) em($line-height / 4);
   font-family: $font-monospace;
-  border: $border-bottom;
+  // border: $border-bottom;
 }
 
 pre {
-  @extend %panel;
+  // @extend %panel;
   margin-top: em($line-height / 2);
   padding: em($line-height / 2) em($line-height);
   font-family: $font-monospace;

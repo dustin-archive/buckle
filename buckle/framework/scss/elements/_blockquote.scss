@@ -2,15 +2,15 @@ blockquote {
   // @extend %block-margin-top;
   margin-top: em($line-height / 2);
   padding: em($line-height / 2) em($line-height);
-  border-radius: em(0) em($border-radius) em($border-radius) em(0); // 0 or x?
+  // border-radius: em(0) em($border-radius) em($border-radius) em(0); // 0 or x?
   background-color: $color-first-1;
   color: $color-first-8;
-  border: $border-bold-left;
+  // border: $border-bold-left;
 
   &.reverse {
-    border-radius: em($border-radius) em(0) em(0) em($border-radius);  // 0 or x?
+    // border-radius: em($border-radius) em(0) em(0) em($border-radius);  // 0 or x?
     text-align: right;
-    border: $border-bold-right;
+    // border: $border-bold-right;
   }
 
   footer {

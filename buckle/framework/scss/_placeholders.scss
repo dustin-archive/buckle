@@ -5,6 +5,9 @@
 //   }
 // }
 
+// make this a mixin?
+// top-left, top-right, bottom-right, bottom-left
+// percentage size of small bubble
 %avatar {
   position: relative;
   width: em(70);
@@ -12,7 +15,7 @@
   border-radius: 50%;
   background-color: $white;
   background-size: cover;
-  border: $border;
+  // border: $border;
 
   @at-root .transparent & {
     background-color: $color-first-1;
@@ -28,7 +31,7 @@
     height: em(70 / (8 / 3));
     border-radius: 50%;
     background-color: $white;
-    border: $border;
+    // border: $border;
     content: '';
 
     @at-root .transparent & {

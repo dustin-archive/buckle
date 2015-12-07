@@ -1,12 +1,12 @@
 hr {
-  height: em($border-thickness);
+  // height: em($border-thickness);
   margin-top: em($margin-top);
   margin-bottom: em($margin-top);
   background-color: $color-first-2;
 
   &.bold {
-    height: em($border-thickness-bold);
-    margin-top: em($margin-top - ($border-thickness / 2));
-    margin-bottom: em($margin-top - ($border-thickness / 2));
+    // height: em($border-thickness-bold);
+    // margin-top: em($margin-top - ($border-thickness / 2));
+    // margin-bottom: em($margin-top - ($border-thickness / 2));
   }
 }

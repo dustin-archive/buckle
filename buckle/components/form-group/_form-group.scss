@@ -1,9 +1,9 @@
 .form-group-vertical {
-  @extend %panel-group-vertical;
+  // @extend %panel-group-vertical;
 }
 
 .form-group-horizontal {
-  @extend %panel-group-horizontal;
+  // @extend %panel-group-horizontal;
 
   input[type='text'] {
     &:focus {

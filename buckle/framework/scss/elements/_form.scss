@@ -5,7 +5,7 @@
 }
 
 button {
-  @extend %panel-interactive;
+  // @extend %panel-interactive;
   @extend %form-element;
 }
 
@@ -14,16 +14,16 @@ input {
   line-height: em($line-height); // Consistent with <button>
 
   &[type='text'] {
-    @extend %panel-interactive-border;
+    // @extend %panel-interactive-border;
   }
 
   &[type='button'] {
-    @extend %panel-interactive;
+    // @extend %panel-interactive;
   }
 }
 
 textarea {
-  @extend %panel-interactive-border;
+  // @extend %panel-interactive-border;
   @extend %form-element;
   resize: initial;
 
