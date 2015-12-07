@@ -92,7 +92,7 @@ linters:
       - background-repeat
       - background-position
       - background-size
-      - background-blend-mode # CSS3
+      - background-blend-mode # NEW
       -
       - # Text
       - color
