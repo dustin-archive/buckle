@@ -1,31 +1,8 @@
-@charset 'UTF-8';
-
-@viewport {
-  width: device-width;
-  zoom: 1;
-}
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  -moz-osx-font-smoothing: grayscale; // Better font rendering
-  -webkit-font-smoothing: antialiased; // Better font rendering
-  word-wrap: break-word;
-  box-sizing: border-box;
-}
-
-html {
-  overflow-x: hidden; // this is a menu thing.. move it?
-}
-
 body {
   font-family: $font-first;
   line-height: un($line-height);
 }
 
 .wrapper {
-  padding: em(16);
+  padding: em(16 32);
 }
