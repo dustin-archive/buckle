@@ -7,12 +7,6 @@ blockquote {
   color: $color-first-8;
   // border: $border-bold-left;
 
-  &.reverse {
-    // border-radius: em($border-radius) em(0) em(0) em($border-radius);  // 0 or x?
-    text-align: right;
-    // border: $border-bold-right;
-  }
-
   footer {
     padding: em($margin-top, 12);
     font-size: em(12);
